@@ -1,0 +1,14 @@
+PASS: YAML front matter parses using Ruby YAML.safe_load
+PASS: required token groups and exact eight-section order
+PASS: 13 hex values, explicit dimensions, and all named fonts traced to evidence
+PASS: 14 responsive type roles match source CSS at all four breakpoints
+PASS: eight PNG files decode, reach the real footer, and have complete visible-frame metrics
+PASS: no forbidden Unicode dashes
+home-desktop.png: 1440x10333
+home-mobile.png: 390x15415
+programs-desktop.png: 1440x10194
+programs-mobile.png: 390x14881
+story-desktop.png: 1440x9994
+story-mobile.png: 390x10952
+donate-desktop.png: 1440x8889
+donate-mobile.png: 390x9801

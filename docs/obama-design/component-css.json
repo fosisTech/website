@@ -1,0 +1,850 @@
+[
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": "button, input, optgroup, select, textarea { color: inherit; font-family: inherit; font-feature-settings: inherit; font-size: 100%; font-variation-settings: inherit; font-weight: inherit; letter-spacing: inherit; line-height: inherit; margin: 0px; padding: 0px; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": "button, select { text-transform: none; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": "button, input:where([type=\"button\"]), input:where([type=\"reset\"]), input:where([type=\"submit\"]) { appearance: button; background-color: transparent; background-image: none; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": "textarea { resize: vertical; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": "input::placeholder, textarea::placeholder { color: rgb(156, 163, 175); opacity: 1; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ":disabled { cursor: default; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": "input[type=\"search\"]::-webkit-search-cancel-button { appearance: none; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".page-body > .rich-text { margin-left: auto; margin-right: auto; max-width: var(--grid-max-width); }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text { padding-bottom: 1.5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text:first-child { margin-top: 0px; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text:last-child { padding-bottom: 0px; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".rich-text { padding-bottom: 1.875rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1920px)"
+    ],
+    "css": ".rich-text { padding-bottom: 2.5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text:not(.rich-text-hr):has(+ .embedded-content) { padding-bottom: 3.75rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": ".rich-text:not(.rich-text-hr):has(+ .embedded-content) { padding-bottom: 5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".rich-text:not(.rich-text-hr):has(+ .embedded-content) { padding-bottom: 6.25rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text-hr { padding-bottom: 1.875rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".embedded-content:has(+ .rich-text-hr) { padding-bottom: 1.875rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": "section > .split-layout + .rich-text-hr { margin-top: 1.875rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".embedded-content .rich-text.rich-text-hr { margin-bottom: 1.875rem; padding-bottom: 0px; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".embedded-content.list-component .rich-text { font-family: \"Chronicle Text G1\", Georgia, serif; font-size: 1rem; line-height: 1.5; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": ".embedded-content.list-component .rich-text { font-size: 1rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".embedded-content.list-component .rich-text { font-size: 1rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1920px)"
+    ],
+    "css": ".embedded-content.list-component .rich-text { font-size: 1.375rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text-ol, .rich-text-ul { font-family: \"Chronicle Text G1\", Georgia, serif; font-size: 1.125rem; line-height: 1.6; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": ".rich-text-ol, .rich-text-ul { font-size: 1.125rem; letter-spacing: -0.2px; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".rich-text-ol, .rich-text-ul { font-size: 1.375rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1920px)"
+    ],
+    "css": ".rich-text-ol, .rich-text-ul { font-size: 1.875rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text-ul .rich-text-li { padding-left: 1.375rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text-ul .rich-text-li::before { font-family: \"Chronicle Text G1\", Georgia, serif; font-size: 1.125rem; line-height: 1.6; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": ".rich-text-ul .rich-text-li::before { content: var(--tw-content); font-size: 1.125rem; letter-spacing: -0.2px; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".rich-text-ul .rich-text-li::before { content: var(--tw-content); font-size: 1.375rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1920px)"
+    ],
+    "css": ".rich-text-ul .rich-text-li::before { content: var(--tw-content); font-size: 1.875rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text-ul .rich-text-li::before { background-color: currentcolor; content: var(--tw-content); height: 6px; left: 0px; margin-right: 0.75rem; position: absolute; top: 0.65rem; width: 6px; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": ".rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 0.75rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 1rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1920px)"
+    ],
+    "css": ".rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 1.5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".list-component .rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 0.55rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": ".list-component .rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 0.65rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".list-component .rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 0.85rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1920px)"
+    ],
+    "css": ".list-component .rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 1rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": "section .list-component .rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 0.35rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": "section .list-component .rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 0.45rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": "section .list-component .rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 0.5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1920px)"
+    ],
+    "css": "section .list-component .rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 0.75rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".centered-layout .rich-text-ul .rich-text-li::before, .list-accordion .rich-text-ul .rich-text-li::before, .list-qa .rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 0.6rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": ".centered-layout .rich-text-ul .rich-text-li::before, .list-accordion .rich-text-ul .rich-text-li::before, .list-qa .rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 0.65rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".centered-layout .rich-text-ul .rich-text-li::before, .list-accordion .rich-text-ul .rich-text-li::before, .list-qa .rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 0.9rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1920px)"
+    ],
+    "css": ".centered-layout .rich-text-ul .rich-text-li::before, .list-accordion .rich-text-ul .rich-text-li::before, .list-qa .rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 1.25rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text-ol .rich-text-li { counter-increment: ol-counter 1; padding-left: 1.675rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".rich-text-ol .rich-text-li { padding-left: 2.25rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1920px)"
+    ],
+    "css": ".rich-text-ol .rich-text-li { padding-left: 2.875rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text-ol .rich-text-li .rich-text-ol .rich-text-li { padding-left: 2.375rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".rich-text-ol .rich-text-li .rich-text-ol .rich-text-li { padding-left: 2.875rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1920px)"
+    ],
+    "css": ".rich-text-ol .rich-text-li .rich-text-ol .rich-text-li { padding-left: 3.5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text-ol .rich-text-li .rich-text-ol .rich-text-ol .rich-text-li { padding-left: 2.875rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": ".rich-text-ol .rich-text-li .rich-text-ol .rich-text-ol .rich-text-li { padding-left: 3.25rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".rich-text-ol .rich-text-li .rich-text-ol .rich-text-ol .rich-text-li { padding-left: 4.125rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1920px)"
+    ],
+    "css": ".rich-text-ol .rich-text-li .rich-text-ol .rich-text-ol .rich-text-li { padding-left: 5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text-ol .rich-text-li::before { content: counters(ol-counter, \".\") \".\"; font-family: \"Chronicle Text G1\", Georgia, serif; font-size: 1.125rem; line-height: 1.6; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": ".rich-text-ol .rich-text-li::before { font-size: 1.125rem; letter-spacing: -0.2px; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".rich-text-ol .rich-text-li::before { font-size: 1.375rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1920px)"
+    ],
+    "css": ".rich-text-ol .rich-text-li::before { font-size: 1.875rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text-ol .rich-text-li::before { display: block; left: 0px; margin-right: 0px; position: absolute; top: 0px; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text-li { display: flex; flex-direction: column; padding-bottom: 0px; position: relative; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".split-layout:not(.bio) .rich-text-li::before { margin-top: -3px; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".split-layout:not(.bio) .rich-text-li::before { margin-top: -8px; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text-li > .rich-text-paragraph { padding-bottom: 1rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".rich-text-li > .rich-text-paragraph { padding-bottom: 1.5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text-li .rich-text-ol { counter-reset: ol-counter 0; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".rich-text-li .rich-text-ol, .rich-text-li .rich-text-ul { margin-left: 1.875rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".rich-text-li .rich-text-ol, .rich-text-li .rich-text-ul { margin-left: 3.75rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".wide-image-layout p.rich-text { font-family: \"Chronicle Text G1\", Georgia, serif; font-size: 1rem; line-height: 1.5; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": ".wide-image-layout p.rich-text { font-size: 1rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".wide-image-layout p.rich-text { font-size: 1rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1920px)"
+    ],
+    "css": ".wide-image-layout p.rich-text { font-size: 1.375rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".\\!section { padding-bottom: 6.25rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".\\!section:first-child { padding-top: 0px; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".\\!section:last-child { padding-bottom: 0px; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": ".\\!section { padding-bottom: 7.5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".\\!section { padding-bottom: 10rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1920px)"
+    ],
+    "css": ".\\!section { padding-bottom: 12.5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".section { padding-bottom: 6.25rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".section:first-child { padding-top: 0px; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".section:last-child { padding-bottom: 0px; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": ".section { padding-bottom: 7.5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".section { padding-bottom: 10rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1920px)"
+    ],
+    "css": ".section { padding-bottom: 12.5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".\\!section > .rich-text:nth-child(2), .section > .rich-text:nth-child(2) { padding-top: 1.875rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".\\!section > .epl:nth-child(2), .section > .\\!epl:nth-child(2), .section > .epl:nth-child(2) { padding-top: 2.5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".\\!section > div[class~=\"md:hidden\"]:last-child, .section > div[class~=\"md:hidden\"]:last-child { margin-top: 2.5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": "section .\\!epl.embedded-content, section .\\!ipl.embedded-content, section .epl.embedded-content, section .ipl.embedded-content, section .split-layout.embedded-content { padding-bottom: 0px; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": "section .ipl.embedded-content:has(+ div.embedded-content), section .ipl.embedded-content:has(+ div.rich-text) { padding-bottom: 3.75rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": "section .ipl.embedded-content:has(+ div.embedded-content), section .ipl.embedded-content:has(+ div.rich-text) { padding-bottom: 5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": "section .ipl.embedded-content:has(+ div.embedded-content), section .ipl.embedded-content:has(+ div.rich-text) { padding-bottom: 6.25rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": "section .\\!ipl.embedded-content:has(+ div.embedded-content), section .\\!ipl.embedded-content:has(+ div.rich-text) { padding-bottom: 3.75rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": "section .\\!ipl.embedded-content:has(+ div.embedded-content), section .\\!ipl.embedded-content:has(+ div.rich-text) { padding-bottom: 5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": "section .\\!ipl.embedded-content:has(+ div.embedded-content), section .\\!ipl.embedded-content:has(+ div.rich-text) { padding-bottom: 6.25rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".\\!section > .centered-layout:has(+ .centered-layout) { padding-bottom: 1.5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".\\!section > .centered-layout:has(+ .centered-layout) { padding-bottom: 1.875rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".section > .centered-layout:has(+ .centered-layout) { padding-bottom: 1.5rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".section > .centered-layout:has(+ .centered-layout) { padding-bottom: 1.875rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".split-layout:not(.bio) .rich-text-paragraph { font-family: \"Chronicle Text G1\", Georgia, serif; font-size: 1rem; line-height: 1.5; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": ".split-layout:not(.bio) .rich-text-paragraph { font-size: 1rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".split-layout:not(.bio) .rich-text-paragraph { font-size: 1rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1920px)"
+    ],
+    "css": ".split-layout:not(.bio) .rich-text-paragraph { font-size: 1.375rem; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".aspect-1\\/1 { aspect-ratio: 1 / 1; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".aspect-16\\/9 { aspect-ratio: 16 / 9; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".aspect-3\\/2 { aspect-ratio: 3 / 2; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".aspect-3\\/4 { aspect-ratio: 3 / 4; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".aspect-4\\/3 { aspect-ratio: 4 / 3; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".aspect-\\[auto\\], .aspect-auto { aspect-ratio: auto; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".select-all { user-select: all; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".shadow-xl { --tw-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1); --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color); box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow); }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".ease-accordion-ease-out { transition-timing-function: cubic-bezier(0.61, 1, 0.88, 1); }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".ease-hero-group { transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".ease-in { transition-timing-function: cubic-bezier(0.4, 0, 1, 1); }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".ease-in-out { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".ease-nav-easing { transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 0.1); }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".ease-spring-easing { transition-timing-function: linear(0 0%, 0.007 1.3%, 0.026 2.8%, 0.06 4.3%, 0.107 6%, 0.212 9.1%, 0.566 18.4%, 0.668 21.5%, 0.753 24.4333%, 0.824 27.3667%, 0.883 30.3%, 0.931 33.4333%, 0.969 36.5667%, 0.995 39.7%, 1.014 43.2%, 1.026 46.9%, 1.032 51.2%, 1.03 58%, 1.005 81.1%, 0.999 100%); }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".before\\:ease-nav-easing::before { content: var(--tw-content); transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 0.1); }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".after\\:ease-nav-easing::after { content: var(--tw-content); transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 0.1); }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".disabled\\:pointer-events-none:disabled { pointer-events: none; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".disabled\\:cursor-not-allowed:disabled { cursor: not-allowed; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".disabled\\:border-grey:disabled { border-color: rgb(114, 118, 121); }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".disabled\\:bg-transparent:disabled { background-color: transparent; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".disabled\\:text-grey:disabled { color: rgb(114, 118, 121); }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [],
+    "css": ".group:has(select:open) .group-has-\\[select\\:open\\]\\:-rotate-180 { --tw-rotate: -180deg; transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": ".md\\:aspect-3\\/2 { aspect-ratio: 3 / 2; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 680px)"
+    ],
+    "css": ".md\\:aspect-\\[5\\/3\\] { aspect-ratio: 5 / 3; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".lg\\:aspect-1\\/1 { aspect-ratio: 1 / 1; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".lg\\:aspect-3\\/2 { aspect-ratio: 3 / 2; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".lg\\:aspect-3\\/4 { aspect-ratio: 3 / 4; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+    "media": [
+      "(min-width: 1200px)"
+    ],
+    "css": ".lg\\:aspect-auto { aspect-ratio: auto; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/filters.551d98c0.css",
+    "media": [],
+    "css": ".is-link-hovered.svelte-o0huki .animate-underline.svelte-o0huki, .link.svelte-o0huki:hover .animate-underline.svelte-o0huki { background-size: 100% 2px; color: inherit; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/filters.551d98c0.css",
+    "media": [],
+    "css": ".link.svelte-o0huki:focus .animate-opacity.svelte-o0huki, .link.svelte-o0huki:hover .animate-opacity.svelte-o0huki { opacity: 1; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/filters.551d98c0.css",
+    "media": [],
+    "css": "textarea.svelte-1v9oymh, input.svelte-3fi3gp { field-sizing: content; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/filters.551d98c0.css",
+    "media": [],
+    "css": ".nav-section-primary-initial.svelte-1fzwjne { transition: opacity 0.8s cubic-bezier(0.33, 1, 0.68, 1) 0.4s, max-height 0.5s cubic-bezier(0.33, 1, 0.68, 1), padding-top 0.5s cubic-bezier(0.33, 1, 0.68, 1); visibility: visible; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/filters.551d98c0.css",
+    "media": [],
+    "css": ".nav-section-primary-opened.svelte-1fzwjne { transition: opacity 0.2s cubic-bezier(0.33, 1, 0.68, 1), max-height 0.5s cubic-bezier(0.33, 1, 0.68, 1), padding-top 0.5s cubic-bezier(0.33, 1, 0.68, 1); visibility: hidden; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/filters.551d98c0.css",
+    "media": [],
+    "css": ".nav-section-secondary-visible.svelte-1fzwjne { transition: transform 0.5s cubic-bezier(0.33, 1, 0.68, 1) 0.2s, opacity 0.4s cubic-bezier(0.33, 1, 0.68, 1) 0.5s, max-height 0.5s cubic-bezier(0.33, 1, 0.68, 1) 0.2s, padding-top 0.5s cubic-bezier(0.33, 1, 0.68, 1) 0.2s; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/filters.551d98c0.css",
+    "media": [],
+    "css": ".nav-section-secondary-hidden.svelte-1fzwjne { transition: transform 0.5s cubic-bezier(0.33, 1, 0.68, 1), opacity 0.4s cubic-bezier(0.33, 1, 0.68, 1), max-height 0.5s cubic-bezier(0.33, 1, 0.68, 1), padding-top 0.5s cubic-bezier(0.33, 1, 0.68, 1); }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/2.9f60a3fc.css",
+    "media": [],
+    "css": ".svelte-1v3wxsa::picker(select), select.svelte-1v3wxsa { appearance: base-select; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/2.9f60a3fc.css",
+    "media": [],
+    "css": ".svelte-1v3wxsa::picker(select) { background-color: rgb(243, 243, 238); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; opacity: 0; padding: 1rem 0.5rem; top: calc(20px + anchor(bottom)); transition: 0.4s allow-discrete; }"
+  },
+  {
+    "url": "https://www.obama.org/_app/immutable/assets/2.9f60a3fc.css",
+    "media": [],
+    "css": ".svelte-1v3wxsa::picker(select):popover-open { opacity: 1; }"
+  }
+]

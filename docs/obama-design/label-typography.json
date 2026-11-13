@@ -1,0 +1,90 @@
+{
+  "labels": [
+    {
+      "cls": "flex list-none flex-wrap label mb-3",
+      "font": "Gotham, system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "lineHeight": "20.25px",
+      "spacing": "-0.5px"
+    },
+    {
+      "cls": "flex list-none flex-wrap label mb-3",
+      "font": "Gotham, system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "lineHeight": "20.25px",
+      "spacing": "-0.5px"
+    },
+    {
+      "cls": "flex list-none flex-wrap label mb-3",
+      "font": "Gotham, system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "lineHeight": "20.25px",
+      "spacing": "-0.5px"
+    },
+    {
+      "cls": "flex list-none flex-wrap label mb-3",
+      "font": "Gotham, system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "lineHeight": "20.25px",
+      "spacing": "-0.5px"
+    },
+    {
+      "cls": "flex list-none flex-wrap label gap-x-5 gap-y-2 pb-3 lg:pb-4 text-black-60",
+      "font": "Gotham, system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "lineHeight": "20.25px",
+      "spacing": "-0.5px"
+    },
+    {
+      "cls": "flex list-none flex-wrap label gap-x-5 gap-y-2 pb-3 lg:pb-4 text-black-60",
+      "font": "Gotham, system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "lineHeight": "20.25px",
+      "spacing": "-0.5px"
+    },
+    {
+      "cls": "flex list-none flex-wrap label gap-x-5 gap-y-2 pb-3 lg:pb-4 text-black-60",
+      "font": "Gotham, system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "lineHeight": "20.25px",
+      "spacing": "-0.5px"
+    },
+    {
+      "cls": "flex list-none flex-wrap label gap-x-5 gap-y-2 pb-3 lg:pb-4 text-black-60",
+      "font": "Gotham, system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "lineHeight": "20.25px",
+      "spacing": "-0.5px"
+    },
+    {
+      "cls": "label pointer-events-none absolute left-0 transition-all duration-[400ms] input-easing opacity-[0] top-[-10px] md:top-[-12px] xl:top-[-15px]",
+      "font": "Gotham, system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "lineHeight": "20.25px",
+      "spacing": "-0.5px"
+    },
+    {
+      "cls": "label  text-system-red",
+      "font": "Gotham, system-ui, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "lineHeight": "20.25px",
+      "spacing": "-0.5px"
+    }
+  ],
+  "rules": [
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "css": ".label { font-family: Gotham, system-ui, sans-serif; font-size: 0.875rem; letter-spacing: -0.4px; line-height: 1.35; }"
+    }
+  ]
+}

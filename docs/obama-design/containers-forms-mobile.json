@@ -1,0 +1,255 @@
+{
+  "width": 390,
+  "containers": [
+    {
+      "cls": "mx-auto flex max-w-container-content-max flex-col justify-start gap-10 px-7.5 py-4 md:flex-row md:justify-between md:gap-15 lg:gap-[30px] lg:px-15 lg:py-5",
+      "width": 390,
+      "x": 0,
+      "maxWidth": "1920px",
+      "padding": "16px 30px",
+      "grid": "none",
+      "gap": "40px",
+      "duration": "0s",
+      "ease": "ease"
+    },
+    {
+      "cls": "mx-auto h-full w-full max-w-container-content-max px-7.5 lg:px-15 ",
+      "width": 390,
+      "x": 0,
+      "maxWidth": "1920px",
+      "padding": "0px 30px",
+      "grid": "none",
+      "gap": "normal",
+      "duration": "0s",
+      "ease": "ease"
+    },
+    {
+      "cls": "mx-auto h-full w-full max-w-container-content-max px-7.5 lg:px-15 ",
+      "width": 390,
+      "x": 0,
+      "maxWidth": "1920px",
+      "padding": "0px 30px",
+      "grid": "none",
+      "gap": "normal",
+      "duration": "0s",
+      "ease": "ease"
+    },
+    {
+      "cls": "grid-columns w-full grid grid-flow-row justify-stretch gap-x-grid-gutter translate-y-[0] ease-spring-easing transition-all duration-[520ms] delay-[500ms] pt-[var(--nav-height)] svelte-e6cvth",
+      "width": 330,
+      "x": 30,
+      "maxWidth": "none",
+      "padding": "92px 0px 0px",
+      "grid": "60px 60px 60px 60px",
+      "gap": "normal 30px",
+      "duration": "0.52s",
+      "ease": "linear(0 0%, 0.007 1.3%, 0.026 2.8%, 0.06 4.3%, 0.107 6%, 0.212 9.1%, 0.566 18.4%, 0.668 21.5%, 0.753 24.4333%, 0.824 27.3667%, 0.883 30.3%, 0.931 33.4333%, 0.969 36.5667%, 0.995 39.7%, 1.014 43.2%, 1.026 46.9%, 1.032 51.2%, 1.03 58%, 1.005 81.1%, 0.999 100%)"
+    },
+    {
+      "cls": "mx-auto h-full w-full max-w-container-content-max px-7.5 lg:px-15 ",
+      "width": 390,
+      "x": 0,
+      "maxWidth": "1920px",
+      "padding": "0px 30px",
+      "grid": "none",
+      "gap": "normal",
+      "duration": "0s",
+      "ease": "ease"
+    },
+    {
+      "cls": "mx-auto h-full w-full max-w-container-content-max px-7.5 lg:px-15 ",
+      "width": 390,
+      "x": 0,
+      "maxWidth": "1920px",
+      "padding": "0px 30px",
+      "grid": "none",
+      "gap": "normal",
+      "duration": "0s",
+      "ease": "ease"
+    },
+    {
+      "cls": "mx-auto h-full w-full max-w-container-content-max px-7.5 lg:px-15 ",
+      "width": 390,
+      "x": 0,
+      "maxWidth": "1920px",
+      "padding": "0px 30px",
+      "grid": "none",
+      "gap": "normal",
+      "duration": "0s",
+      "ease": "ease"
+    },
+    {
+      "cls": "mx-auto h-full w-full max-w-container-content-max px-7.5 lg:px-15 ",
+      "width": 390,
+      "x": 0,
+      "maxWidth": "1920px",
+      "padding": "0px 30px",
+      "grid": "none",
+      "gap": "normal",
+      "duration": "0s",
+      "ease": "ease"
+    },
+    {
+      "cls": "mx-auto h-full w-full max-w-container-content-max px-7.5 lg:px-15 ",
+      "width": 390,
+      "x": 0,
+      "maxWidth": "1920px",
+      "padding": "0px 30px",
+      "grid": "none",
+      "gap": "normal",
+      "duration": "0s",
+      "ease": "ease"
+    },
+    {
+      "cls": "grid-columns w-full grid grid-flow-row justify-stretch gap-x-grid-gutter svelte-e6cvth",
+      "width": 330,
+      "x": 30,
+      "maxWidth": "none",
+      "padding": "0px",
+      "grid": "60px 60px 60px 60px",
+      "gap": "normal 30px",
+      "duration": "0s",
+      "ease": "ease"
+    },
+    {
+      "cls": "grid-columns w-full grid grid-flow-row justify-stretch gap-x-grid-gutter lg:flex lg:justify-start lg:gap-x-8 pb-px first:pb-0 lg:[&:nth-last-child(2)]:pb-0 lg:[&:nth-child(2)]:pt-0 svelte-e6cvth",
+      "width": 330,
+      "x": 30,
+      "maxWidth": "none",
+      "padding": "0px",
+      "grid": "60px 60px 60px 60px",
+      "gap": "normal 30px",
+      "duration": "0s",
+      "ease": "ease"
+    },
+    {
+      "cls": "grid-columns w-full grid grid-flow-row justify-stretch gap-x-grid-gutter lg:flex lg:justify-start lg:gap-x-8 pb-px first:pb-0 lg:[&:nth-last-child(2)]:pb-0 lg:[&:nth-child(2)]:pt-0 svelte-e6cvth",
+      "width": 330,
+      "x": 30,
+      "maxWidth": "none",
+      "padding": "0px",
+      "grid": "60px 60px 60px 60px",
+      "gap": "normal 30px",
+      "duration": "0s",
+      "ease": "ease"
+    },
+    {
+      "cls": "grid-columns w-full grid grid-flow-row justify-stretch gap-x-grid-gutter lg:flex lg:justify-start lg:gap-x-8 pb-px first:pb-0 lg:[&:nth-last-child(2)]:pb-0 lg:[&:nth-child(2)]:pt-0 svelte-e6cvth",
+      "width": 330,
+      "x": 30,
+      "maxWidth": "none",
+      "padding": "0px",
+      "grid": "60px 60px 60px 60px",
+      "gap": "normal 30px",
+      "duration": "0s",
+      "ease": "ease"
+    },
+    {
+      "cls": "grid-columns w-full grid grid-flow-row justify-stretch gap-x-grid-gutter lg:flex lg:justify-start lg:gap-x-8 pb-px first:pb-0 lg:[&:nth-last-child(2)]:pb-0 lg:[&:nth-child(2)]:pt-0 svelte-e6cvth",
+      "width": 330,
+      "x": 30,
+      "maxWidth": "none",
+      "padding": "0px",
+      "grid": "60px 60px 60px 60px",
+      "gap": "normal 30px",
+      "duration": "0s",
+      "ease": "ease"
+    },
+    {
+      "cls": "mx-auto h-full w-full max-w-container-content-max px-7.5 lg:px-15 ",
+      "width": 390,
+      "x": 0,
+      "maxWidth": "1920px",
+      "padding": "0px 30px",
+      "grid": "none",
+      "gap": "normal",
+      "duration": "0s",
+      "ease": "ease"
+    },
+    {
+      "cls": "mx-auto h-full w-full max-w-container-content-max px-7.5 lg:px-15 ",
+      "width": 390,
+      "x": 0,
+      "maxWidth": "1920px",
+      "padding": "0px 30px",
+      "grid": "none",
+      "gap": "normal",
+      "duration": "0s",
+      "ease": "ease"
+    }
+  ],
+  "inputs": [
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "cls": "w-full flex-1 bg-transparent pb-3 !leading-regular outline-none placeholder:text-wrap md:pb-4 md:pr-7 placeholder-black svelte-3fi3gp",
+      "font": "\"Gotham Condensed\", Gotham-Fallback, system-ui, sans-serif",
+      "size": "20px",
+      "padding": "0px 0px 12px",
+      "parentClass": "heading-xxs relative flex w-full items-center border-b-thin pb-px focus-within:border-b-hover focus-within:pb-0 hover:border-b-hover hover:pb-0",
+      "parentBorder": "1px solid rgb(0, 0, 0)",
+      "parentFocus": "rgb(0, 0, 0) none 3px",
+      "parentHeight": "41px"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "cls": "w-full flex-1 bg-transparent pb-3 !leading-regular outline-none placeholder:text-wrap md:pb-4 md:pr-7 placeholder-black svelte-3fi3gp",
+      "font": "\"Gotham Condensed\", Gotham-Fallback, system-ui, sans-serif",
+      "size": "20px",
+      "padding": "0px 0px 12px",
+      "parentClass": "heading-xxs relative flex w-full items-center border-b-thin pb-px focus-within:border-b-hover focus-within:pb-0 hover:border-b-hover hover:pb-0",
+      "parentBorder": "1px solid rgb(0, 0, 0)",
+      "parentFocus": "rgb(0, 0, 0) none 3px",
+      "parentHeight": "41px"
+    },
+    {
+      "tag": "INPUT",
+      "type": "email",
+      "cls": "w-full flex-1 bg-transparent pb-3 !leading-regular outline-none placeholder:text-wrap md:pb-4 md:pr-7 placeholder-black svelte-3fi3gp",
+      "font": "\"Gotham Condensed\", Gotham-Fallback, system-ui, sans-serif",
+      "size": "20px",
+      "padding": "0px 0px 12px",
+      "parentClass": "heading-xxs relative flex w-full items-center border-b-thin pb-px focus-within:border-b-hover focus-within:pb-0 hover:border-b-hover hover:pb-0",
+      "parentBorder": "1px solid rgb(0, 0, 0)",
+      "parentFocus": "rgb(0, 0, 0) none 3px",
+      "parentHeight": "41px"
+    },
+    {
+      "tag": "INPUT",
+      "type": "text",
+      "cls": "w-full flex-1 bg-transparent pb-3 !leading-regular outline-none placeholder:text-wrap md:pb-4 md:pr-7 placeholder-black svelte-3fi3gp",
+      "font": "\"Gotham Condensed\", Gotham-Fallback, system-ui, sans-serif",
+      "size": "20px",
+      "padding": "0px 0px 12px",
+      "parentClass": "heading-xxs relative flex w-full items-center border-b-thin pb-px focus-within:border-b-hover focus-within:pb-0 hover:border-b-hover hover:pb-0",
+      "parentBorder": "1px solid rgb(0, 0, 0)",
+      "parentFocus": "rgb(0, 0, 0) none 3px",
+      "parentHeight": "41px"
+    },
+    {
+      "tag": "INPUT",
+      "type": "phone",
+      "cls": "w-full flex-1 bg-transparent pb-3 !leading-regular outline-none placeholder:text-wrap md:pb-4 md:pr-7 placeholder-black svelte-3fi3gp",
+      "font": "\"Gotham Condensed\", Gotham-Fallback, system-ui, sans-serif",
+      "size": "20px",
+      "padding": "0px 0px 12px",
+      "parentClass": "heading-xxs relative flex w-full items-center border-b-thin pb-px focus-within:border-b-hover focus-within:pb-0 hover:border-b-hover hover:pb-0",
+      "parentBorder": "1px solid rgb(0, 0, 0)",
+      "parentFocus": "rgb(0, 0, 0) none 3px",
+      "parentHeight": "41px"
+    },
+    {
+      "tag": "INPUT",
+      "type": "checkbox",
+      "cls": "cursor-pointer relative h-6 w-6 shrink-0 appearance-none rounded-none bg-transparent before:absolute before:top-[50%] before:left-[50%] before:-translate-y-1/2 before:-translate-x-1/2 not:disabled:hover:before:top-[1px] not:disabled:hover:before:left-[1px] before:h-[0.625rem] before:w-[0.625rem] before:bg-black before:rounded-full before:opacity-[0] before:transition-opacity not:disabled:hover:border-[2px] border-unset border-thin outline-none checked:before:opacity-[10] hover:border-[2px]",
+      "font": "\"Gotham Condensed\", Gotham-Fallback, system-ui, sans-serif",
+      "size": "20px",
+      "padding": "0px",
+      "parentClass": "relative flex items-center",
+      "parentBorder": "0px solid rgb(0, 0, 0)",
+      "parentFocus": "rgb(0, 0, 0) none 3px",
+      "parentHeight": "37.7969px"
+    }
+  ]
+}

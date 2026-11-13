@@ -1,0 +1,210 @@
+{
+  "viewport": 1440,
+  "top": {
+    "y": 0,
+    "nav": [
+      {
+        "cls": "bg-transparent cta-md sticky left-0 top-0 z-global-nav hidden h-nav-height-desktop  w-full transition-all  duration-[300ms] ease-nav-easing lg:block",
+        "y": 120.796875,
+        "height": 125,
+        "position": "sticky",
+        "bg": "rgba(0, 0, 0, 0)",
+        "shadow": "none",
+        "duration": "0.3s",
+        "easing": "cubic-bezier(0.25, 0.1, 0.25, 0.1)"
+      }
+    ]
+  },
+  "down": {
+    "y": 1200,
+    "nav": [
+      {
+        "cls": "bg-white cta-md sticky left-0 top-0 z-global-nav hidden h-nav-height-desktop lg:h-[74px] xl:h-[82px] w-full transition-all duration-[300ms] ease-nav-easing lg:block shadow-xl",
+        "y": 0,
+        "height": 125,
+        "position": "sticky",
+        "bg": "rgba(0, 0, 0, 0)",
+        "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "duration": "0.3s",
+        "easing": "cubic-bezier(0.25, 0.1, 0.25, 0.1)"
+      }
+    ]
+  },
+  "up": {
+    "y": 549,
+    "nav": [
+      {
+        "cls": "bg-white cta-md sticky left-0 top-0 z-global-nav hidden h-nav-height-desktop lg:h-[74px] xl:h-[82px] w-full transition-all duration-[300ms] ease-nav-easing lg:block shadow-xl",
+        "y": 0,
+        "height": 74,
+        "position": "sticky",
+        "bg": "rgb(255, 255, 255)",
+        "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px",
+        "duration": "0.3s",
+        "easing": "cubic-bezier(0.25, 0.1, 0.25, 0.1)"
+      }
+    ]
+  },
+  "buttons": [
+    {
+      "tag": "A",
+      "cls": "cta-md relative border-thin bg-black text-white border-black focus-visible:outline-black  hover:bg-transparent hover:text-black px-5 py-4 lg:px-6 lg:py-4 xl:px-8 xl:py-5 flex items-center transition-colors focus-visible:outline-dashed focus-visible:outline-offset-2 !absolute !z-[--stack-level-layer-top] !left-4 !top-[-100px] focus-visible:!top-4 hover:bg-white",
+      "padding": "16px 24px",
+      "border": "1px solid rgb(0, 0, 0)",
+      "background": "rgb(0, 0, 0)",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "A",
+      "cls": "link outline-2 outline-offset-4 focus-visible:outline-dashed cursor-pointer relative outline-current focus-visible:border-current cta-md flex items-center text-black flex-row svelte-o0huki",
+      "padding": "0px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "cls": "cta-md relative border-thin bg-cobalt-blue text-white border-cobalt-blue focus-visible:outline-black  hover:bg-transparent hover:text-cobalt-blue px-5 py-4 lg:px-6 lg:py-4 xl:px-8 xl:py-5 flex items-center transition-colors focus-visible:outline-dashed focus-visible:outline-offset-2 override-[nav]:px-8 override-[nav]:py-6 transition-all duration-[150ms] ease-nav-easing",
+      "padding": "24px 32px",
+      "border": "1px solid rgb(0, 100, 240)",
+      "background": "rgb(0, 100, 240)",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "cta-md relative border-thin bg-transparent text-white border-white focus-visible:outline-current  hover:bg-white hover:text-black p-4 flex items-center transition-colors focus-visible:outline-dashed focus-visible:outline-offset-2 z-video-controls -mx-px order-2",
+      "padding": "16px",
+      "border": "1px solid rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "cta-md relative border-thin bg-transparent text-white border-white focus-visible:outline-current  hover:bg-white hover:text-black p-4 flex items-center transition-colors focus-visible:outline-dashed focus-visible:outline-offset-2 z-video-controls order-3",
+      "padding": "16px",
+      "border": "1px solid rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "cta-md relative border-thin bg-transparent text-white border-white focus-visible:outline-current  hover:bg-white hover:text-black p-4 flex items-center transition-colors focus-visible:outline-dashed focus-visible:outline-offset-2 z-video-controls order-1",
+      "padding": "16px",
+      "border": "1px solid rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "SPAN",
+      "cls": "link outline-2 outline-offset-4 focus-visible:outline-dashed cursor-pointer relative outline-current focus-visible:border-current cta-lg flex items-center text-white !heading-xs whitespace-pre-line svelte-o0huki",
+      "padding": "0px",
+      "border": "0px solid rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "DIV",
+      "cls": "cta-md relative border-thin p-4 bg-white text-black border-white focus-visible:outline-white undefined mt-8 w-fit transition-colors",
+      "padding": "16px",
+      "border": "1px solid rgb(255, 255, 255)",
+      "background": "rgb(255, 255, 255)",
+      "color": "rgb(0, 0, 0)"
+    },
+    {
+      "tag": "DIV",
+      "cls": "cta-md relative border-thin p-4 bg-white text-black border-white focus-visible:outline-white undefined w-fit transition-colors",
+      "padding": "16px",
+      "border": "1px solid rgb(255, 255, 255)",
+      "background": "rgb(255, 255, 255)",
+      "color": "rgb(0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "cls": "cta-md relative border-thin bg-transparent border-black text-black focus-visible:outline-current  hover:bg-black hover:text-white px-5 py-4 lg:px-6 lg:py-4 xl:px-8 xl:py-5 flex items-center transition-colors focus-visible:outline-dashed focus-visible:outline-offset-2 block lg:inline-block justify-center lg:justify-start",
+      "padding": "16px 24px",
+      "border": "1px solid rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)"
+    },
+    {
+      "tag": "SPAN",
+      "cls": "link outline-2 outline-offset-4 focus-visible:outline-dashed cursor-pointer relative outline-current focus-visible:border-current cta-md flex items-center text-white pt-15 lg:pt-20 mt-auto svelte-o0huki",
+      "padding": "80px 0px 0px",
+      "border": "0px solid rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "A",
+      "cls": "link outline-2 outline-offset-4 focus-visible:outline-dashed cursor-pointer relative outline-current focus-visible:border-current cta-lg flex items-center text-black mt-10 lg:mt-20 svelte-o0huki",
+      "padding": "0px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)"
+    },
+    {
+      "tag": "SPAN",
+      "cls": "link outline-2 outline-offset-4 focus-visible:outline-dashed cursor-pointer relative outline-current focus-visible:border-current cta-md flex items-center text-black mt-6 md:mt-7 lg:mt-7.5 xl:mt-8 svelte-o0huki",
+      "padding": "0px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "cls": "markdown-internal link outline-2 outline-offset-4 focus-visible:outline-dashed cursor-pointer relative outline-current focus-visible:border-current inline undefined hover:before:w-[0px] hover:text-cobalt-blue",
+      "padding": "0px",
+      "border": "0px solid rgba(0, 0, 0, 0.75)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgba(0, 0, 0, 0.75)"
+    },
+    {
+      "tag": "INPUT",
+      "cls": "cursor-pointer relative h-6 w-6 shrink-0 appearance-none rounded-none bg-transparent before:absolute before:top-[50%] before:left-[50%] before:-translate-y-1/2 before:-translate-x-1/2 not:disabled:hover:before:top-[1px] not:disabled:hover:before:left-[1px] before:h-[0.625rem] before:w-[0.625rem] before:bg-black before:rounded-full before:opacity-[0] before:transition-opacity not:disabled:hover:border-[2px] border-unset border-thin outline-none checked:before:opacity-[10] hover:border-[2px]",
+      "padding": "0px",
+      "border": "1px solid rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "cls": "link outline-2 outline-offset-4 focus-visible:outline-dashed cursor-pointer relative outline-current focus-visible:border-current inline text-black underline hover:before:w-[0px] hover:text-cobalt-blue svelte-o0huki",
+      "padding": "0px",
+      "border": "0px solid rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "cta-md relative border-thin bg-transparent border-black text-black focus-visible:outline-current  hover:bg-black hover:text-white px-5 py-4 lg:px-6 lg:py-4 xl:px-8 xl:py-5 flex items-center transition-colors focus-visible:outline-dashed focus-visible:outline-offset-2 relative",
+      "padding": "16px 24px",
+      "border": "1px solid rgb(0, 0, 0)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "cls": "cta-md relative border-thin bg-white text-black border-white focus-visible:outline-white  hover:bg-transparent hover:text-white px-5 py-4 lg:px-6 lg:py-4 xl:px-8 xl:py-5 flex items-center transition-colors focus-visible:outline-dashed focus-visible:outline-offset-2 inline-flex",
+      "padding": "16px 24px",
+      "border": "1px solid rgb(255, 255, 255)",
+      "background": "rgb(255, 255, 255)",
+      "color": "rgb(0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "cls": "link outline-2 outline-offset-4 focus-visible:outline-dashed cursor-pointer relative outline-current focus-visible:border-current cta-md flex items-center text-white block md:inline-flex svelte-o0huki",
+      "padding": "0px",
+      "border": "0px solid rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "A",
+      "cls": "link outline-2 outline-offset-4 focus-visible:outline-dashed cursor-pointer relative outline-current focus-visible:border-current inline text-white hover:text-white hover:before:w-[0px] hover:text-cobalt-blue svelte-o0huki",
+      "padding": "0px",
+      "border": "0px solid rgb(255, 255, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "rootSize": "16px",
+  "fonts": [
+    {
+      "family": "Gotham Condensed",
+      "weight": "700",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "Gotham-Fallback",
+      "weight": "normal",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "Gotham",
+      "weight": "500",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "Chronicle Text G1",
+      "weight": "400",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "Chronicle Text G1",
+      "weight": "400",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "Chronicle Text G1",
+      "weight": "700",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "Chronicle Text G1",
+      "weight": "700",
+      "style": "italic",
+      "status": "unloaded"
+    }
+  ],
+  "rules": [
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "css": ".h-svh { height: 100svh; }"
+    }
+  ]
+}

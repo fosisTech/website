@@ -1,0 +1,344 @@
+{
+  "rules": [
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [],
+      "css": ":root { --grid-columns: 4; --grid-gap: 1.875rem; --grid-gap-half: .9375rem; --grid-margin: 1.875rem; --grid-max-width: 120rem; --nav-height: 92px; --embed-height: 350px; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [
+        "(prefers-reduced-motion: no-preference)"
+      ],
+      "css": "html { scroll-behavior: smooth; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [],
+      "css": ".container { width: 100%; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [
+        "(min-width: 320px)"
+      ],
+      "css": ".container { max-width: 320px; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [
+        "(min-width: 680px)"
+      ],
+      "css": ".container { max-width: 680px; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [
+        "(min-width: 1200px)"
+      ],
+      "css": ".container { max-width: 1200px; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [
+        "(min-width: 1920px)"
+      ],
+      "css": ".container { max-width: 1920px; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [],
+      "css": ".page-body > .rich-text { margin-left: auto; margin-right: auto; max-width: var(--grid-max-width); }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [],
+      "css": ".centered-layout .rich-text-ul .rich-text-li::before, .list-accordion .rich-text-ul .rich-text-li::before, .list-qa .rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 0.6rem; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [
+        "(min-width: 680px)"
+      ],
+      "css": ".centered-layout .rich-text-ul .rich-text-li::before, .list-accordion .rich-text-ul .rich-text-li::before, .list-qa .rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 0.65rem; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [
+        "(min-width: 1200px)"
+      ],
+      "css": ".centered-layout .rich-text-ul .rich-text-li::before, .list-accordion .rich-text-ul .rich-text-li::before, .list-qa .rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 0.9rem; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [
+        "(min-width: 1920px)"
+      ],
+      "css": ".centered-layout .rich-text-ul .rich-text-li::before, .list-accordion .rich-text-ul .rich-text-li::before, .list-qa .rich-text-ul .rich-text-li::before { content: var(--tw-content); top: 1.25rem; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [],
+      "css": ".\\!section > .centered-layout:has(+ .centered-layout) { padding-bottom: 1.5rem; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [
+        "(min-width: 1200px)"
+      ],
+      "css": ".\\!section > .centered-layout:has(+ .centered-layout) { padding-bottom: 1.875rem; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [],
+      "css": ".section > .centered-layout:has(+ .centered-layout) { padding-bottom: 1.5rem; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [
+        "(min-width: 1200px)"
+      ],
+      "css": ".section > .centered-layout:has(+ .centered-layout) { padding-bottom: 1.875rem; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [],
+      "css": ".max-w-container-content-max { max-width: var(--grid-max-width); }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [],
+      "css": ".overscroll-contain { overscroll-behavior: contain; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/0.7e72e0af.css",
+      "media": [],
+      "css": ".overscroll-y-contain { overscroll-behavior-y: contain; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/filters.551d98c0.css",
+      "media": [],
+      "css": ".animate-underline.svelte-o0huki.svelte-o0huki { background-image: linear-gradient(currentcolor, currentcolor); background-position: 0px 100%; background-repeat: no-repeat; background-size: 0px 2px; text-decoration: none; transition: background-size 0.3s ease-in-out; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/filters.551d98c0.css",
+      "media": [],
+      "css": ".animate-opacity.svelte-o0huki.svelte-o0huki { opacity: 0; transition: opacity 0.3s ease-in-out; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/filters.551d98c0.css",
+      "media": [],
+      "css": ".is-link-hovered.svelte-o0huki .animate-underline.svelte-o0huki, .link.svelte-o0huki:hover .animate-underline.svelte-o0huki { background-size: 100% 2px; color: inherit; }"
+    },
+    {
+      "url": "https://www.obama.org/_app/immutable/assets/filters.551d98c0.css",
+      "media": [],
+      "css": ".link.svelte-o0huki:focus .animate-opacity.svelte-o0huki, .link.svelte-o0huki:hover .animate-opacity.svelte-o0huki { opacity: 1; }"
+    }
+  ],
+  "svg": [
+    {
+      "cls": "absolute bottom-1/2 left-0 top-1/2 h-full w-full -translate-y-1/2 delay-[650ms] transition-all duration-[150ms] ease-nav-easing opacity-[1]",
+      "viewBox": "0 0 80 80",
+      "width": 0,
+      "height": 0,
+      "stroke": null,
+      "fill": "currentColor"
+    },
+    {
+      "cls": "absolute bottom-1/2 left-0 top-1/2 h-full w-full -translate-y-1/2 delay-[650ms] transition-all duration-[150ms] ease-nav-easing opacity-[0]",
+      "viewBox": "0 0 80 80",
+      "width": 0,
+      "height": 0,
+      "stroke": null,
+      "fill": "currentColor"
+    },
+    {
+      "cls": "",
+      "viewBox": "0 0 16 16",
+      "width": 0,
+      "height": 0,
+      "stroke": null,
+      "fill": "none"
+    },
+    {
+      "cls": "",
+      "viewBox": "0 0 16 16",
+      "width": 0,
+      "height": 0,
+      "stroke": null,
+      "fill": "none"
+    },
+    {
+      "cls": "",
+      "viewBox": "0 0 16 16",
+      "width": 0,
+      "height": 0,
+      "stroke": null,
+      "fill": "none"
+    },
+    {
+      "cls": "",
+      "viewBox": "0 0 16 16",
+      "width": 0,
+      "height": 0,
+      "stroke": null,
+      "fill": "none"
+    },
+    {
+      "cls": "",
+      "viewBox": "0 0 16 16",
+      "width": 0,
+      "height": 0,
+      "stroke": null,
+      "fill": "none"
+    },
+    {
+      "cls": "",
+      "viewBox": "0 0 16 16",
+      "width": 0,
+      "height": 0,
+      "stroke": null,
+      "fill": "none"
+    },
+    {
+      "cls": "absolute bottom-1/2 left-0 top-1/2 h-full w-full -translate-y-1/2 transition-all duration-[150ms] ease-nav-easing delay-[400ms] opacity-opaque",
+      "viewBox": "0 0 80 80",
+      "width": 44,
+      "height": 44,
+      "stroke": null,
+      "fill": "currentColor"
+    },
+    {
+      "cls": "absolute bottom-1/2 left-0 top-1/2 h-full w-full -translate-y-1/2 transition-all duration-[150ms] ease-nav-easing delay-[400ms] opacity-transparent",
+      "viewBox": "0 0 80 80",
+      "width": 44,
+      "height": 44,
+      "stroke": null,
+      "fill": "currentColor"
+    },
+    {
+      "cls": "xl:w-6 xl:h-6 inline",
+      "viewBox": "0 0 16 16",
+      "width": 16,
+      "height": 16,
+      "stroke": null,
+      "fill": "none"
+    },
+    {
+      "cls": "",
+      "viewBox": "0 0 16 16",
+      "width": 16,
+      "height": 16,
+      "stroke": null,
+      "fill": "none"
+    },
+    {
+      "cls": "",
+      "viewBox": "0 0 16 16",
+      "width": 16,
+      "height": 16,
+      "stroke": null,
+      "fill": "none"
+    },
+    {
+      "cls": "ml-1 xl:ml-2 xl:w-6 xl:h-6",
+      "viewBox": "0 0 16 16",
+      "width": 16,
+      "height": 16,
+      "stroke": null,
+      "fill": "none"
+    },
+    {
+      "cls": "ml-1 xl:ml-2 xl:w-6 xl:h-6",
+      "viewBox": "0 0 16 16",
+      "width": 16,
+      "height": 16,
+      "stroke": null,
+      "fill": "none"
+    }
+  ],
+  "images": [
+    {
+      "tag": "IMG",
+      "cls": "h-full w-full object-cover object-center  ",
+      "w": 330,
+      "h": 330,
+      "filter": "none",
+      "fit": "cover",
+      "ratio": "auto"
+    },
+    {
+      "tag": "IMG",
+      "cls": "h-full w-full object-cover object-center  ",
+      "w": 330,
+      "h": 0,
+      "filter": "none",
+      "fit": "cover",
+      "ratio": "auto"
+    },
+    {
+      "tag": "IMG",
+      "cls": "h-full w-full object-cover object-center  null",
+      "w": 240,
+      "h": 160,
+      "filter": "none",
+      "fit": "cover",
+      "ratio": "auto"
+    },
+    {
+      "tag": "IMG",
+      "cls": "h-full w-full object-cover object-center  null",
+      "w": 240,
+      "h": 160,
+      "filter": "none",
+      "fit": "cover",
+      "ratio": "auto"
+    },
+    {
+      "tag": "IMG",
+      "cls": "h-full w-full object-cover object-center  null",
+      "w": 240,
+      "h": 160,
+      "filter": "none",
+      "fit": "cover",
+      "ratio": "auto"
+    },
+    {
+      "tag": "IMG",
+      "cls": "h-full w-full object-cover object-center  null",
+      "w": 240,
+      "h": 160,
+      "filter": "none",
+      "fit": "cover",
+      "ratio": "auto"
+    },
+    {
+      "tag": "IMG",
+      "cls": "h-full w-full object-cover object-center  null",
+      "w": 240,
+      "h": 160,
+      "filter": "none",
+      "fit": "cover",
+      "ratio": "auto"
+    },
+    {
+      "tag": "IMG",
+      "cls": "h-full w-full object-cover object-center  ",
+      "w": 330,
+      "h": 0,
+      "filter": "none",
+      "fit": "cover",
+      "ratio": "auto"
+    },
+    {
+      "tag": "IMG",
+      "cls": "h-full w-full object-cover object-center  ",
+      "w": 330,
+      "h": 0,
+      "filter": "none",
+      "fit": "cover",
+      "ratio": "auto"
+    }
+  ]
+}
