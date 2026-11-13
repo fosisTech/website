@@ -1,61 +1,85 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Encode_Sans_Condensed, Frank_Ruhl_Libre, Inter } from "next/font/google";
 import "./globals.css";
+import { DonatePill } from "@/components/DonatePill";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
+import {
+  isIndexable,
+  SITE_DESCRIPTION,
+  SITE_LEGAL_NAME,
+  SITE_NAME,
+  SITE_SAME_AS,
+  SITE_URL,
+} from "@/lib/site";
 
-// Initialize the Geist font with Latin subset
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const encodeCondensed = Encode_Sans_Condensed({
+  variable: "--font-display-face",
   subsets: ["latin"],
+  weight: ["700"],
 });
 
-// Initialize the Geist Mono font with Latin subset
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const frankRuhl = Frank_Ruhl_Libre({
+  variable: "--font-serif-face",
   subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["500"],
 });
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#111827" },
+    { color: "#0064f0" },
   ],
 };
 
-// Define metadata for better SEO
+const OG_IMAGE = {
+  url: "/og-image.png",
+  width: 1200,
+  height: 630,
+  alt: `${SITE_NAME}, the ${SITE_LEGAL_NAME}`,
+};
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000"),
-  title: "Next.js Beginner Template",
-  description: "A beginner-friendly Next.js template with TailwindCSS and TypeScript",
-  keywords: ["Next.js", "React", "TailwindCSS", "TypeScript", "Template"],
-  authors: [{ name: "Created with Cursor Agent" }],
-  creator: "Cursor Agent",
-  publisher: "Cursor Agent",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_NAME} | ${SITE_LEGAL_NAME}`,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  alternates: { canonical: "./" },
   openGraph: {
-    title: "Next.js Beginner Template",
-    description: "A beginner-friendly Next.js template with TailwindCSS and TypeScript",
-    url: "https://nextjs.org/",
-    siteName: "Next.js Beginner Template",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Next.js Beginner Template",
-      },
-    ],
-    locale: "en_US",
+    title: `${SITE_NAME} | ${SITE_LEGAL_NAME}`,
+    description: SITE_DESCRIPTION,
+    siteName: SITE_NAME,
+    locale: "en_GB",
     type: "website",
+    images: [OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Next.js Beginner Template",
-    description: "A beginner-friendly Next.js template with TailwindCSS and TypeScript",
-    images: ["/og-image.png"],
+    title: `${SITE_NAME} | ${SITE_LEGAL_NAME}`,
+    description: SITE_DESCRIPTION,
+    images: [OG_IMAGE],
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: isIndexable() ? { index: true, follow: true } : { index: false, follow: false },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: SITE_NAME,
+  legalName: SITE_LEGAL_NAME,
+  url: SITE_URL,
+  logo: `${SITE_URL}/apple-icon.png`,
+  foundingDate: "1963",
+  description: SITE_DESCRIPTION,
+  sameAs: SITE_SAME_AS,
 };
 
 export default function RootLayout({
@@ -64,17 +88,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100`}
-      >
+    <html lang="en-GB" className={`${encodeCondensed.variable} ${frankRuhl.variable} ${inter.variable}`}>
+      <body className="antialiased">
         <a
           href="#main-content"
-          className="absolute -top-12 left-4 z-50 px-4 py-2 bg-indigo-600 text-white rounded-md transition-[top] duration-200 focus:top-4 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          className="type-cta absolute -top-16 left-4 z-[60] bg-white px-4 py-3 text-ink transition-[top] duration-200 focus:top-4 focus:outline-2 focus:outline-offset-2 focus:outline-ink"
         >
           Skip to main content
         </a>
+        <SiteHeader />
         {children}
+        <SiteFooter />
+        <DonatePill />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
       </body>
     </html>
   );
