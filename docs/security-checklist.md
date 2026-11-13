@@ -64,7 +64,7 @@ Mark items `[x]` when done. Use `n/a` in notes when a surface does not exist yet
 - [ ] `bun audit` (or equivalent) is clean or has documented accepted risk
 - [ ] `oxlint` / `@oxlint/plugins` and other security-sensitive pins move as matching pairs
 - [ ] CI does not inject host credentials into untrusted build steps
-- [ ] Deploy uses the correct Cloudflare / host profile (`YOUR_CF_PROFILE`); secrets via host secret store (`wrangler secret`, dashboard), not committed files
+- [ ] Deploy uses the correct Cloudflare / host profile (`techfosis` for this repo); secrets via host secret store (`wrangler secret`, dashboard), not committed files
 - [ ] Preview deployments cannot reach production data stores unless intentionally designed and reviewed
 
 ## Attack-class coverage (when doing a deeper pass)
@@ -107,4 +107,4 @@ When fixing a confirmed issue (`security-vulnerability-mitigation`):
 - Skill: `security-audit` (discovery + independent verification)
 - Skill: `security-vulnerability-mitigation` (implement fixes)
 - Skill: `website-compliance` (privacy / legal / a11y; not the same as vulns)
-- This template: `next.config.mjs` headers/CSP, `src/lib/env.ts`, `.env.example`
+- This project: `next.config.mjs` headers/CSP, `src/lib/env.ts`, `.env.example`

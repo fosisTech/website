@@ -27,8 +27,8 @@ Mark items `[x]` when done.
 
 ## Architecture and duplicates
 
-- [ ] One preferred HTTPS host (apex or `www`); alternatives 301/308 with no chains or loops
-- [ ] `NEXT_PUBLIC_APP_URL` / metadataBase match the production origin
+- [x] One preferred HTTPS host (apex or `www`); alternatives 301/308 with no chains or loops (apex `https://fosis.org.uk`; `www` redirect lives in `next.config.mjs`, repeat it at the DNS/CDN edge, and HTTP to HTTPS is a host setting)
+- [x] `NEXT_PUBLIC_APP_URL` / metadataBase match the production origin
 - [ ] Indexable pages have self-canonicals; canonical targets are reachable and equivalent
 - [ ] Logical URL hierarchy; descriptive anchors; breadcrumbs where they help
 - [ ] Pagination (if any) uses discoverable URLs and a deliberate canonical policy (not everything → page one)
@@ -57,16 +57,25 @@ Mark items `[x]` when done.
 - [ ] `llms.txt` / docs entry points are accurate when shipped; public API URLs stay stable
 - [ ] No cloaking: crawlers and users see materially the same content
 
+## FOSIS decisions
+
+- Canonical host: apex `https://fosis.org.uk`, set in `src/lib/site.ts`. The live WordPress site uses the same host.
+- URLs keep a trailing slash (`trailingSlash: true`) to match the live site (`/about-us/`).
+- Indexing is on only when `NEXT_PUBLIC_APP_URL=https://fosis.org.uk` at build time. Otherwise `robots.txt` disallows all and pages get `noindex`. Set it on the production deployment only.
+- `robots.txt` keeps the live site's block list for AI crawlers (GPTBot, ClaudeBot, Google-Extended, and others). Remove entries in `src/app/robots.ts` to change that policy.
+- Add each new route to `SITEMAP_PATHS` in `src/lib/site.ts`. Only `/` exists today.
+- Still open: per-route metadata and unique descriptions (the live site has 136 empty ones), breadcrumbs, structured data beyond `Organization`, and Core Web Vitals on the deployed site.
+
 ## Template wiring checklist (this repo)
 
 Implement or confirm these App Router pieces as the site grows:
 
-- [ ] `src/app/robots.ts` (or equivalent) for `robots.txt`
-- [ ] `src/app/sitemap.ts` (or equivalent) for the XML sitemap
-- [ ] `src/app/not-found.tsx` for real 404s
+- [x] `src/app/robots.ts` (or equivalent) for `robots.txt`
+- [x] `src/app/sitemap.ts` (or equivalent) for the XML sitemap
+- [x] `src/app/not-found.tsx` for real 404s
 - [ ] Per-route `metadata` / `generateMetadata` with unique titles
-- [ ] `public/og-image.png` (or updated path) matching layout metadata
-- [ ] Production indexing policy explicit (preview/staging should stay `noindex`)
+- [x] `public/og-image.png` (or updated path) matching layout metadata
+- [x] Production indexing policy explicit (preview/staging should stay `noindex`)
 
 ## Finding format
 
@@ -87,4 +96,4 @@ Prioritize crawl/index blockers, then architecture/rendering, then performance a
 - Skill: `technical-seo`
 - Skill: `pagespeed` (live CWV / lab measurements)
 - Skill: `website-compliance` (`docs/web-compliance-checklist.md`)
-- This template: `src/app/layout.tsx` metadata, `next.config.mjs` redirects/headers
+- This project: `src/app/layout.tsx` metadata, `next.config.mjs` redirects/headers

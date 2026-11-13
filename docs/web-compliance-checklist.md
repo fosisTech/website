@@ -32,7 +32,7 @@ Mark items `[x]` when done. Note intentional deferrals.
 - [ ] Meaningful images have alt text; decorative images are marked appropriately
 - [ ] Text meets contrast AA; meaning is not conveyed by color alone
 - [ ] Landmarks and headings are in a sensible order (one H1 per page template)
-- [ ] Skip link to main content works (template ships one in `layout.tsx`; keep it)
+- [ ] Skip link to main content works (`layout.tsx` ships one; keep it)
 - [ ] Live regions used for async errors/status when needed
 - [ ] Motion / animation respects `prefers-reduced-motion` where motion is non-essential
 
