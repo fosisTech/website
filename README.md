@@ -2,7 +2,7 @@
 
 Rebuild of https://fosis.org.uk/ (Federation of Student Islamic Societies) as a Next.js site. The current WordPress site is the reference. A full scrape of its structure, copy, links, and images lives in [`docs/fosis-site/`](docs/fosis-site/README.md).
 
-The repository started from the `mwijanarko1/template` Next.js starter. The home page is built in the obama.org visual style described in [`DESIGN.md`](DESIGN.md). Other routes are not built yet.
+The repository started from the `mwijanarko1/template` Next.js starter. The site uses the obama.org visual style described in [`DESIGN.md`](DESIGN.md). Every page of the source site is built. The site runs as a Cloudflare Worker at `https://website.fosis.workers.dev`. The domain `fosis.org.uk` is not attached yet.
 
 ## Rebuild reference
 
@@ -29,7 +29,7 @@ The site favicon (`src/app/favicon.ico`, `src/app/apple-icon.png`) comes from th
 
 ## Features
 
-- **Current state**: home page built; other routes not built yet
+- **Current state**: all pages built, including 112 ISoc pages, 12 articles, the khutbah library, and the Day of Arafat planner. The enquiry forms open the visitor's email app. The newsletter form has no provider yet
 - **Reference capture**: 146 pages of structure, copy, links, and images under `docs/fosis-site/`
 - **Responsive Design**: Mobile-first approach with Tailwind CSS
 - **TypeScript Support**: Full type checking and IntelliSense
@@ -68,16 +68,27 @@ fosis-website/
 ├── AGENTS.md                  # Agent rules + CLI profile inventory
 ├── docs/
 │   ├── CODEBASE_MAP.md        # Architecture / navigation map
+│   ├── CONTRIBUTING.md        # Contributor workflow
+│   ├── MAINTAINERS.md         # Release and deploy procedure (maintainers only)
+│   ├── ENVIRONMENT.md         # Environment variables
+│   ├── context.md             # Product context and constraints
 │   ├── fosis-site/            # Scrape of fosis.org.uk: structure, copy, links, images
 │   ├── security-checklist.md
 │   ├── web-compliance-checklist.md
 │   └── technical-seo-checklist.md
 ├── src/
-│   ├── app/                   # Next.js App Router entrypoints
-│   ├── components/            # Header, footer, hero video, shared UI
-│   ├── lib/                   # Shared helpers (env validation)
+│   ├── app/                   # Next.js App Router routes
+│   ├── components/            # Header, footer, hero video, directory, forms, shared UI
+│   ├── content/               # Articles (Markdown) and generated JSON data
+│   ├── lib/                   # Site constants, nav, articles, ISocs, jobs, env validation
 │   └── test/                  # Vitest setup
+├── e2e/                       # Playwright E2E specs and runner
+├── public/                    # Images, hero video, khutbah passage images
+├── tools/content/             # Scripts that regenerate src/content from docs/fosis-site
 ├── tools/oxlint/anti-slop/    # Custom oxlint rules used across Mikhail Builds repos
+├── wrangler.jsonc             # Cloudflare Worker config
+├── open-next.config.ts        # OpenNext config
+├── DESIGN.md                  # Design brief
 ├── oxlint.config.mjs          # Primary linter config
 ├── eslint.config.mjs          # ESLint / Next.js config
 ├── vitest.config.mts          # Unit test config
@@ -111,11 +122,13 @@ bun run test        # Vitest watch mode
 bun run test:run    # Vitest single run (no unit tests)
 bun run test:e2e    # Playwright E2E against a production build
 bun run build       # Production build
+bun run cf:build    # Build the OpenNext bundle for Cloudflare
+bun run cf:deploy   # Build and deploy (maintainers only)
 ```
 
 ## Testing
 
-Behaviour is covered by Playwright E2E tests in `e2e/` (Helium browser, production build, 1440 and 390 px viewports). Run `bun run test:e2e`.
+Behaviour is covered by Playwright E2E tests in `e2e/` (Helium browser, production build, 1440 and 390 px viewports). Run `bun run test:e2e`. The suite needs the Helium browser at `/Applications/Helium.app`. Specs: `home.spec.ts`, `about-us.spec.ts`, and `remaining-pages.spec.ts`.
 
 ## Environment
 
