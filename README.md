@@ -140,7 +140,18 @@ bun run build
 bun run start
 ```
 
-The site is ready to deploy to Vercel, Cloudflare, or any other hosting platform that supports Next.js.
+### Deploy to Cloudflare
+
+The site runs as a Cloudflare Worker through OpenNext (`wrangler.jsonc`, `open-next.config.ts`). The Worker is named `website` on the FOSIS account (`techfosis` profile), so the production URL is `https://website.fosis.workers.dev`.
+
+```bash
+bun run cf:build                          # next build plus the OpenNext bundle
+bunx wrangler deploy --profile techfosis  # upload to production
+```
+
+Wrangler needs an API token in non-interactive shells. Do not set `NEXT_PUBLIC_APP_URL` for the workers.dev URL: with it unset, `robots.txt` disallows everything and every page is `noindex`. Set it to `https://fosis.org.uk` at build time only when the real domain is attached.
+
+To attach the domain, add `fosis.org.uk` as a Custom Domain on the `website` Worker (Workers & Pages, Settings, Domains and Routes), then rebuild with `NEXT_PUBLIC_APP_URL=https://fosis.org.uk`.
 
 ## Contributing
 

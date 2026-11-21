@@ -1,65 +1,81 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SocialIcon } from "@/components/SocialIcon";
 import { FOOTER_COLUMNS, FOOTER_SOCIALS } from "@/lib/nav";
 
+const linkClass = "type-heading-xxs underline-offset-4 hover:underline";
+
+/** Four ruled columns of condensed links, after the obama.org footer. */
 export function SiteFooter() {
   return (
-    <footer className="bg-cobalt text-white">
-      <div className="page-wrap pt-[3.75rem]">
-        <div className="grid gap-10 border-b border-white/40 pb-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] lg:gap-[var(--grid-gap)]">
-          <div>
-            <Link href="/" aria-label="FOSIS home" className="inline-block">
-              <Image src="/images/fosis-logo.png" alt="FOSIS" width={512} height={464} className="h-24 w-auto" />
-            </Link>
-            <p className="type-heading-xs mt-6">The Federation of Student Islamic Societies</p>
-            <p className="type-label mt-2">Est. 1963</p>
-            <p className="type-body-sm mt-6 max-w-sm text-white">
-              The UK&apos;s national body representing Muslim students in higher and further education.
-            </p>
-          </div>
-          <div className="grid gap-10 md:grid-cols-3 md:gap-[var(--grid-gap)]">
-            {FOOTER_COLUMNS.map((column) => (
-              <div key={column.heading}>
-                <h2 className="type-label mb-5">{column.heading}</h2>
-                <ul className="flex flex-col gap-3">
-                  {column.links.map((item) => (
-                    <li key={item.label}>
-                      <Link href={item.href} prefetch={false} className="type-body-sm underline-offset-4 hover:underline">
-                        {item.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+    <footer className="bg-navy text-white">
+      <div className="page-wrap pt-[3.75rem] lg:pt-[6.25rem]">
+        <div className="grid gap-x-[var(--grid-gap)] gap-y-12 md:grid-cols-2 lg:grid-cols-4">
+          {FOOTER_COLUMNS.map((column) => (
+            <nav key={column.heading} aria-label={column.heading} className="border-t border-white pt-4">
+              <h2 className="type-label">{column.heading}</h2>
+              <ul className="mt-8 flex flex-col gap-5 lg:mt-10">
+                {column.links.map((item) => (
+                  <li key={item.label}>
+                    <Link href={item.href} prefetch={false} className={linkClass}>
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          ))}
+          <div className="border-t border-white pt-4">
+            <h2 className="type-label">Stay Connected</h2>
+            <ul className="mt-8 flex flex-col gap-5 lg:mt-10">
+              {FOOTER_SOCIALS.map((social) => (
+                <li key={social.href}>
+                  <a
+                    href={social.href}
+                    aria-label={social.ariaLabel}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${linkClass} inline-flex items-center gap-3`}
+                  >
+                    <SocialIcon name={social.icon} />
+                    {social.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
-        <ul className="flex flex-wrap gap-x-8 gap-y-3 border-b border-white/40 py-8">
-          {FOOTER_SOCIALS.map((social) => (
-            <li key={social.href}>
-              <a
-                href={social.href}
-                aria-label={social.ariaLabel}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="arrow-link"
-              >
-                {social.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <div className="flex flex-col gap-2 py-8 type-body-sm text-white md:flex-row md:justify-between">
-          <p>© {new Date().getFullYear()} FOSIS. All rights reserved.</p>
+
+        <div className="mt-16 flex flex-col gap-6 border-t border-white/40 pt-8 md:flex-row md:items-center md:justify-between lg:mt-24">
+          <div className="flex items-center gap-5">
+            <Link href="/" aria-label="FOSIS home" className="inline-block shrink-0">
+              <Image src="/images/fosis-logo.png" alt="FOSIS" width={512} height={464} className="h-16 w-auto" />
+            </Link>
+            <div>
+              <p className="type-heading-xxs">The Federation of Student Islamic Societies</p>
+              <p className="type-label mt-1">Est. 1963</p>
+            </div>
+          </div>
+          <p className="type-body-sm md:max-w-[28ch] md:text-right">
+            The UK&apos;s national body representing Muslim students in higher and further education.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-2 py-8 type-body-sm md:flex-row md:justify-between">
+          <p>
+            © {new Date().getFullYear()} FOSIS. All rights reserved. Made by{" "}
+            <a
+              href="https://mikhailwijanarko.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4"
+            >
+              @mikhailbuilds
+            </a>
+          </p>
           <p>Representing 350,000 Muslim Students Nationwide</p>
         </div>
       </div>
-      <p
-        aria-hidden="true"
-        className="type-heading-xl overflow-hidden whitespace-nowrap px-[var(--grid-margin)] pb-4 text-center uppercase !text-[48vw] !leading-[0.8] !tracking-[-0.03em] lg:!text-[46vw]"
-      >
-        FOSIS
-      </p>
     </footer>
   );
 }

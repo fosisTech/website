@@ -8,7 +8,7 @@ last_mapped: 2026-11-12T00:00:00Z
 
 Rebuild of https://fosis.org.uk/ on Next.js App Router. The site is still the starter template (one home page with a Hero section); the rebuild has not started in `src/`. The scraped reference for the rebuild is `docs/fosis-site/`. Starter surface: one home page with a Hero section, Zod-validated env helper, Vitest + Testing Library, Oxlint (anti-slop plugin) plus ESLint, Tailwind CSS 4, Bun.
 
-No auth, Convex, Clerk, Cloudflare Workers, or email integration ships in the tree yet. The CLI profiles for those services are inventoried in `AGENTS.md`; Cloudflare and Convex are already set up for this repo, Clerk and Resend are not.
+Cloudflare deployment config ships in the tree (`wrangler.jsonc`, `open-next.config.ts`, `bun run cf:build`). No auth, Convex, Clerk, or email integration ships yet. The CLI profiles for those services are inventoried in `AGENTS.md`; Cloudflare and Convex are already set up for this repo, Clerk and Resend are not.
 
 Local checkout: `fosis-website`. Started from the GitHub template `mwijanarko1/template`, now at `fosisTech/website`.
 
@@ -27,11 +27,16 @@ Local checkout: `fosis-website`. Started from the GitHub template `mwijanarko1/t
 | `src/app/favicon.ico` | App favicon (16, 32, 48 px), generated from the FOSIS logo |
 | `src/app/apple-icon.png` | 180 px Apple touch icon, from the FOSIS logo |
 | `src/components/SiteHeader.tsx` | Fixed header: transparent over the hero, white bar on scroll, desktop dropdown nav, mobile drawer (focus trap, Escape, scroll lock) |
-| `src/components/SiteFooter.tsx` | Cobalt footer: link columns, socials, legal line, oversized FOSIS wordmark |
+| `src/components/SupportBand.tsx` | "Support FOSIS" donate band, rendered by the root layout on every page directly above the footer (same navy field) |
+| `src/components/SiteFooter.tsx` | Navy footer: link columns, socials, legal line |
 | `src/components/HeroVideo.tsx` | Muted looping hero video with pause button; stays paused under `prefers-reduced-motion` |
-| `src/components/DonatePill.tsx` | "Support Us" pill shown after the hero |
+| `src/components/FaqSection.tsx` | Home FAQ accordion (native `details`, one open at a time), placed above the contact section |
+| `src/components/NewsletterBand.tsx` | Home newsletter signup (obama.org "Be an Insider" pattern). The form is not wired to a provider yet |
 | `src/components/ui.tsx` | `ButtonLink`, `ArrowLink`, `SectionHead` (heavy rule plus condensed label) |
-| `src/lib/nav.ts` | Header nav, footer columns and social links |
+| `src/lib/nav.ts` | Header nav (5 links plus Support Us, like obama.org), footer columns and social links |
+| `src/lib/articles.ts` | The 12 real articles (newest first), shared by home and `/articles/` |
+| `src/lib/isocs.ts`, `src/lib/jobs.ts` | Typed views over the generated JSON in `src/content/` |
+| `tools/content/` | `build-isocs.py` and `build-pages-data.py` regenerate `src/content/*.json` and ISoc logos from `docs/fosis-site/` (run from the repo root) |
 | `public/video/`, `public/images/` | Compressed hero video and poster, FOSIS logo, home photos, ISoc logos |
 | `e2e/`, `playwright.config.ts` | Playwright E2E suite (Helium browser, production build); `bun run test:e2e` |
 | `DESIGN.md` | Design brief extracted from obama.org; `docs/obama-design/` holds its evidence |
@@ -58,7 +63,19 @@ Local checkout: `fosis-website`. Started from the GitHub template `mwijanarko1/t
 
 | Route | Source |
 |-------|--------|
-| `/` | `src/app/page.tsx` (hero, mission, stats, pillars, network, call to action) |
+| `/` | `src/app/page.tsx` (hero, get-started feature cards, network, news, projects list, support, contact) |
+| `/about-us/` | `src/app/about-us/page.tsx` (intro, mission, statistics, three pillars) |
+| `/YYYY/MM/DD/slug/` | `src/app/[year]/[month]/[day]/[slug]/page.tsx`, one page per article in `src/lib/articles.ts` (static params, other paths 404). Body Markdown lives in `src/content/articles/`, rendered by `src/components/ArticleBody.tsx` |
+| `/articles/` | `src/app/articles/page.tsx` (card grid modelled on obama.org/stories/all, Stay Informed band; single page, no pagination or filter) |
+| `/fosis-history/` | `src/app/fosis-history/page.tsx` (timeline, chapters, people from `src/content/history.json`) |
+| `/find-your-isoc/` | `src/app/find-your-isoc/page.tsx` plus `IsocDirectory` (search and region filter over `src/content/isocs.json`, preset by `?region=`) |
+| `/isoc/<slug>/` | `src/app/isoc/[slug]/page.tsx`, one page per ISoc (static params, other slugs 404) |
+| `/isoc-affiliations/`, `/fosis-services/`, `/isoc-essentials/`, `/isoc-essentials/leadership/` | ISoc-facing pages. The Essentials pillars Events, Finance, Advocacy, Tarbiyyah and Alumni are "Coming Soon" because the source pages never existed |
+| `/events/`, `/fosis-report/` | Pages embedding Luma and Tally iframes (allowed by `frame-src` in `next.config.mjs`) |
+| `/ihsaan-careers/`, `/islamic-resources/`, `/support-us/`, `/contact-us/`, `/join-team-fosis/` | Content pages. Donate buttons link to the Zeffy forms. Open roles come from `src/content/jobs.json` |
+| `/book-islamophobia-training/`, `/sabbatical-officer-network/` | Enquiry forms via `MailtoForm` (opens the email app, no backend yet) |
+| `/day-of-arafat/` | Guide plus `ArafatPlanner` (checklist and progress saved in `localStorage`) |
+| `/khutbah-library/` | `KhutbahLibrary` reader over `src/content/khutbahs.json`, Arabic passages in `public/khutbah/` |
 | `/_not-found` | Next.js default not-found |
 
 ## Key Workflows
@@ -76,20 +93,22 @@ Local checkout: `fosis-website`. Started from the GitHub template `mwijanarko1/t
 
 | File | Covers |
 |------|--------|
-| `e2e/home.spec.ts` | Home copy and links, header and mobile drawer, footer, hero video, support pill, overflow, 404 and crawler endpoints at 1440 and 390 px |
+| `e2e/home.spec.ts` | Home sections, copy and links, header and mobile drawer, footer, hero video, support pill, overflow, 404 and crawler endpoints at 1440 and 390 px |
+| `e2e/about-us.spec.ts` | About Us copy, links, title, canonical, solid header, overflow, sitemap entry at 1440 and 390 px |
 | `src/components/Hero.test.tsx` | Hero renders heading, supporting copy, and main landmark |
 
 ## Design decisions
 
-- The home page copies the obama.org visual language from `DESIGN.md`: cobalt `#0064f0`, sky `#8eddff`, ice `#d2faff` bands, heavy section rules, split hero headline, oversized condensed type, square buttons, radiating line panel.
-- FOSIS navy `#0a2240` stays as a card and wordmark colour. The FOSIS gold is dropped.
+- The home section order follows obama.org's homepage: hero, feature cards (Visit), news cards (Latest), projects list (Programs), donate band, contact details. The mission statement, statistics and pillars live on `/about-us/`. Network stays on home. Newsletter and announcement bar are not built (no backend, no real announcement).
+- The home page copies the obama.org visual language from `DESIGN.md`: navy `#1a4a7a` (the old FOSIS theme's light navy, close to the FOSIS Instagram blue), gold `#fbbf24` panels and mist `#eef1f6` bands, heavy section rules, split hero headline, oversized condensed type, square buttons, radiating line panel.
+- Navy `#1a4a7a` is the one dark brand colour (fields, footer, buttons). A slightly darker `navy-mid` `#143a6b` is used for alternating panels. The old FOSIS gold is not used; the accent is the brighter `#fbbf24`.
 - Fonts are free lookalikes loaded with `next/font`: Encode Sans Condensed 700 (display, closest measured width and weight to Gotham Condensed Bold), Frank Ruhl Libre 400 (body, narrow and dense like Chronicle Text), Inter 500 (labels). Gotham and Chronicle are licensed and not used.
-- Copy is verbatim from `docs/fosis-site/content/home.md`. Photos come from `docs/fosis-site/images/`.
+- Copy comes from `docs/fosis-site/content/`: `home.md` (mission, statistics, pillars, network), `find-your-isoc.md`, `isoc-affiliations.md`, `ihsaan-careers.md` and `book-islamophobia-training.md` (feature cards, the Ihsaan and training lines are short synopses), `articles.md` (news), `support-us.md` and `contact-us.md`. Photos come from `docs/fosis-site/images/`.
 
 ## Known Risks
 
 - The hero video is a 20 s, 2.5 MB cut of the 2019 conference highlights (title card, on-screen captions and end cards removed). It is from 2019, so confirm it still represents FOSIS.
-- Internal links use `prefetch={false}` because most target routes are not built yet. Remove it as routes ship.
+- Internal links still use `prefetch={false}` from when most routes were unbuilt. It can now be removed.
 - CSP allows `'unsafe-inline'` scripts because Next injects inline hydration scripts and the pages are static.
 - `docs/fosis-site/` is a 28 MB, 294 file capture. It has no sitemap on the source site, 3 linked 404s, 136 pages with empty meta descriptions, and a broken default `og:image`. Read its `README.md` gaps before relying on it. Copy and images belong to FOSIS; confirm usage rights before publishing the rebuild.
 - `NEXT_PUBLIC_APP_URL` must equal `https://fosis.org.uk` on the production build, or the site ships `noindex` and a disallow-all `robots.txt`. Metadata base and canonicals always use `SITE_URL`.

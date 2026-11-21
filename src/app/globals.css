@@ -8,16 +8,17 @@
   --breakpoint-xl: 120rem;
 
   --color-ink: #000000;
-  --color-navy: #0a2240;
-  --color-cobalt: #0064f0;
-  --color-sky: #8eddff;
-  --color-ice: #d2faff;
+  --color-navy: #1a4a7a;
+  --color-navy-mid: #143a6b;
+  --color-gold: #fbbf24;
+  --color-mist: #eef1f6;
   --color-paper: #f3f3ee;
   --color-grey: #727679;
 
   --font-display: var(--font-display-face), "Arial Narrow", system-ui, sans-serif;
   --font-serif: var(--font-serif-face), Georgia, serif;
   --font-label: var(--font-inter), system-ui, sans-serif;
+  --font-arabic: var(--font-arabic-face), "Geeza Pro", serif;
 }
 
 :root {
@@ -59,9 +60,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* No focus outline anywhere, by request. Underlined form fields still thicken their rule on focus. */
 *:focus-visible {
-  outline: 2px dashed currentColor;
-  outline-offset: 2px;
+  outline: none;
 }
 
 /* Discrete type steps from DESIGN.md "Responsive scale": 390, 680, 1200, 1920 px. */
@@ -158,6 +159,11 @@ body {
   .section { padding-top: 7.5rem; padding-bottom: 12.5rem; }
 }
 
+/* A section that follows another section on the same background: the previous bottom padding is the gap. */
+.section.section-flush {
+  padding-top: 0;
+}
+
 /* Buttons: square, 1px border, colour-swap hover. */
 .btn {
   display: inline-flex;
@@ -177,8 +183,8 @@ body {
   .btn { padding: 1rem 1.5rem; font-size: 1.5rem; }
 }
 
-.btn-cobalt { background: var(--color-cobalt); border-color: var(--color-cobalt); color: #ffffff; }
-.btn-cobalt:hover { background: transparent; color: var(--color-cobalt); }
+.btn-navy { background: var(--color-navy); border-color: var(--color-navy); color: #ffffff; }
+.btn-navy:hover { background: transparent; color: var(--color-navy); }
 .btn-ink { background: var(--color-ink); border-color: var(--color-ink); color: #ffffff; }
 .btn-ink:hover { background: transparent; color: var(--color-ink); }
 .btn-white { background: #ffffff; border-color: #ffffff; color: var(--color-ink); }
@@ -187,6 +193,30 @@ body {
 .btn-outline-ink:hover { background: var(--color-ink); color: #ffffff; }
 .btn-outline-white { background: transparent; border-color: #ffffff; color: #ffffff; }
 .btn-outline-white:hover { background: #ffffff; color: var(--color-ink); }
+
+/* FAQ accordion: the answer height and opacity animate on open and close (native details, no script). */
+:root {
+  interpolate-size: allow-keywords;
+}
+
+.faq-item::details-content {
+  block-size: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    block-size 0.4s cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 0.3s ease,
+    content-visibility 0.4s allow-discrete;
+}
+
+.faq-item[open]::details-content {
+  block-size: auto;
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-item::details-content { transition: none; }
+}
 
 /* Heavy section marker bar: 8 / 10 / 12 px. */
 .rule {

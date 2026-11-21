@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { ButtonLink } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Page not found",
@@ -8,20 +8,47 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <main
-      id="main-content"
-      className="flex min-h-screen flex-col items-center justify-center gap-6 px-4 text-center"
-    >
-      <h1 className="text-4xl font-bold">Page not found</h1>
-      <p className="max-w-md text-gray-600 dark:text-gray-300">
-        The page you are looking for does not exist or has moved.
-      </p>
-      <Link
-        href="/"
-        className="rounded-md bg-indigo-600 px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-      >
-        Back to the FOSIS homepage
-      </Link>
+    <main id="main-content" tabIndex={-1} className="outline-none">
+      <section className="bg-mist">
+        <div className="page-wrap pt-[calc(var(--nav-height)+3.75rem)] pb-[3.75rem] lg:pb-[6.25rem]">
+          <div aria-hidden="true" className="rule" />
+          <h1 className="type-heading-xl mt-6 lg:mt-8">Page not found</h1>
+          <p className="type-body-lg mt-8 max-w-[30ch] lg:mt-12">
+            This page is still being built, or the link has moved. Try one of these instead.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-4 lg:mt-12">
+            <ButtonLink href="/" variant="navy">
+              Back to Home
+            </ButtonLink>
+            <ButtonLink href="/about-us/" variant="outline-ink">
+              About FOSIS
+            </ButtonLink>
+            <ButtonLink href="/articles/" variant="outline-ink">
+              Read Articles
+            </ButtonLink>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white pb-[6.25rem] md:pb-[7.5rem] lg:pb-[10rem]">
+        <div className="page-wrap pt-[3.75rem] lg:pt-[6.25rem]">
+          <div aria-hidden="true" className="rule" />
+          <div className="mt-6 grid gap-6 lg:mt-8 lg:grid-cols-12 lg:gap-x-[var(--grid-gap)]">
+            <h2 className="type-heading-md lg:col-span-5">Can&apos;t find what you need?</h2>
+            <div className="lg:col-span-7">
+              <p className="type-body-md max-w-[34ch]">
+                Tell us what you were looking for and we will point you to the right place.
+              </p>
+              <a
+                href="mailto:info@fosis.org.uk"
+                className="type-heading-sm mt-6 block break-words underline underline-offset-4"
+              >
+                info@fosis.org.uk
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

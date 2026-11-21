@@ -1,39 +1,60 @@
 import Image from "next/image";
+import Link from "next/link";
+import { ContactCard } from "@/components/ContactCard";
+import { FaqSection } from "@/components/FaqSection";
 import { HeroVideo } from "@/components/HeroVideo";
-import { ArrowLink, ButtonLink, SectionHead } from "@/components/ui";
+import { NewsletterBand } from "@/components/NewsletterBand";
+import { ArrowIcon, ArrowLink, ButtonLink, SectionHead } from "@/components/ui";
+import { ARTICLES, formatArticleDate } from "@/lib/articles";
 
-const STATS = [
-  { value: "63+", label: "Years of Service", description: "Serving Muslim students since our foundation in 1963." },
-  { value: "350K", label: "Students Represented", description: "The largest Muslim student network across the UK." },
-  { value: "100+", label: "Affiliated ISocs", description: "Islamic Societies united under one national body." },
-  { value: "50+", label: "Events Per Year", description: "National and regional events for students across the UK." },
+const FEATURES = [
+  {
+    title: "FOSIS Events Across the UK",
+    description:
+      "Over 100 national and regional events each year, from conferences and training days to socials and Islamic camps.",
+    href: "/events/",
+    cta: "View Events",
+    image: "/images/home/crowd.jpg",
+    external: false,
+  },
+  {
+    title: "Meet IHSAAN",
+    description:
+      "IHSAAN is a grassroots organisation helping Muslim students and graduates across the UK and Ireland bridge the gap between university and professional life.",
+    href: "https://ihsaan.network",
+    cta: "Explore IHSAAN",
+    image: "/images/home/ihsaan-careers.jpg",
+    external: true,
+  },
+  {
+    title: "Resources for Your Faith Journey",
+    description:
+      "Guides, companion reads, and spiritual resources curated by FOSIS for Muslim students across the UK.",
+    href: "/islamic-resources/",
+    cta: "Explore Resources",
+    image: "/images/home/seminar.jpg",
+    external: false,
+  },
+  {
+    title: "Making Campuses Safer for Muslim Students",
+    description:
+      "Interactive Islamophobia Awareness Training for Student Union leaders, sabbatical officers, and university staff.",
+    href: "/book-islamophobia-training/",
+    cta: "Book Training",
+    image: "/images/home/brothers.jpg",
+    external: false,
+  },
 ];
 
-const PILLARS = [
-  {
-    title: "Development",
-    description:
-      "Training, resources, and leadership programmes that equip students for success in their careers and communities.",
-    href: "/about-us/",
-    image: "/images/home/conference.jpg",
-    tone: "bg-cobalt text-white",
-  },
-  {
-    title: "Unity",
-    description:
-      "Bridging ISocs from every corner of the UK into one powerful, unified network of Muslim student excellence.",
-    href: "/isoc-affiliations/",
-    image: "/images/home/brothers.jpg",
-    tone: "bg-navy text-white",
-  },
-  {
-    title: "Advocacy",
-    description:
-      "Championing the rights and welfare of Muslim students at every level, from individual campuses to parliament.",
-    href: "/fosis-report/",
-    image: "/images/home/crowd.jpg",
-    tone: "bg-sky text-ink",
-  },
+const PROJECTS = [
+  { label: "IHSAAN Careers", href: "/ihsaan-careers/" },
+  { label: "ISoc Essentials", href: "/isoc-essentials/" },
+  { label: "FOSIS Services", href: "/fosis-services/" },
+  { label: "FOSIS Report", href: "/fosis-report/" },
+  { label: "Islamic Resources", href: "/islamic-resources/" },
+  { label: "Sabbatical Officer Network", href: "/sabbatical-officer-network/" },
+  { label: "Book Islamophobia Training", href: "/book-islamophobia-training/" },
+  { label: "Events", href: "/events/" },
 ];
 
 const ISOC_LOGOS = [
@@ -48,23 +69,10 @@ const ISOC_LOGOS = [
   { src: "/images/isocs/Newcastle.jpg", name: "Newcastle University Islamic Society" },
 ];
 
-function Chip({ src }: { src: string }) {
-  return (
-    <Image
-      src={src}
-      alt=""
-      role="presentation"
-      width={256}
-      height={160}
-      className="mx-[0.12em] inline-block h-[0.62em] w-[1em] -translate-y-[0.04em] object-cover align-middle"
-    />
-  );
-}
-
 export default function Home() {
   return (
     <main id="main-content" tabIndex={-1} className="outline-none">
-      <section data-hero className="relative isolate bg-cobalt text-white lg:min-h-svh">
+      <section data-hero className="relative isolate bg-navy text-white lg:min-h-svh">
         <div className="page-wrap pt-[calc(var(--nav-height)+3.75rem)] pb-[3.75rem] lg:absolute lg:inset-x-0 lg:bottom-0 lg:z-10 lg:pt-0 lg:pb-12">
           <h1 className="type-heading-lg max-w-[14ch] lg:max-w-none lg:!text-[4.5rem] xl:!text-[5.625rem]">Empowering Muslim Students.</h1>
           <div className="mt-10 flex flex-wrap gap-4 lg:mt-8">
@@ -81,69 +89,27 @@ export default function Home() {
 
       <section className="section bg-white">
         <div className="page-wrap">
-          <SectionHead>Our Mission</SectionHead>
-          <h2 className="type-heading-lg">
-            We have been <Chip src="/images/home/lecture-hall.jpg" />
-            serving Muslim students <Chip src="/images/home/crowd.jpg" />
-            since 1963.
-          </h2>
-          <div className="mt-12 grid gap-8 lg:mt-20 lg:grid-cols-12 lg:gap-x-[var(--grid-gap)]">
-            <div className="lg:col-span-5 lg:col-start-8">
-              <p className="type-body-md">
-                FOSIS connects, empowers, and advocates for Islamic Societies across every university in the United
-                Kingdom. From spiritual development to career guidance, from national campaigns to grassroots community
-                building, we are the infrastructure behind Muslim student excellence.
-              </p>
-              <div className="mt-8">
-                <ButtonLink href="/about-us/" variant="outline-ink">
-                  About FOSIS
-                </ButtonLink>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section bg-cobalt text-white">
-        <div className="page-wrap">
-          <SectionHead>By The Numbers</SectionHead>
-          <ul className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-0">
-            {STATS.map((stat) => (
-              <li
-                key={stat.label}
-                className="flex flex-col gap-3 border-t border-white/40 pt-6 lg:border-t-0 lg:border-l lg:pl-[var(--grid-gap)] lg:first:border-l-0 lg:first:pl-0"
-              >
-                <p className="type-heading-lg">{stat.value}</p>
-                <p className="type-heading-xs">{stat.label}</p>
-                <p className="type-body-sm max-w-[22ch]">{stat.description}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      <section className="section bg-white">
-        <div className="page-wrap">
-          <SectionHead>What We Do</SectionHead>
-          <h2 className="type-heading-lg mb-12 lg:mb-20">Three Pillars of Our Work</h2>
-          <div className="grid gap-[var(--grid-gap)] lg:grid-cols-3">
-            {PILLARS.map((pillar) => (
-              <article key={pillar.title} className={`flex flex-col p-2 ${pillar.tone}`}>
-                <div className="relative aspect-[3/2] overflow-hidden">
+          <SectionHead>Get Started</SectionHead>
+          <div className="grid gap-x-[var(--grid-gap)] gap-y-12 lg:grid-cols-12 lg:gap-y-16">
+            {FEATURES.map((feature) => (
+              <article key={feature.title} className="flex flex-col lg:col-span-6">
+                <div className="relative h-72 overflow-hidden lg:h-[28rem]">
                   <Image
-                    src={pillar.image}
+                    src={feature.image}
                     alt=""
                     role="presentation"
                     fill
-                    sizes="(min-width: 1200px) 33vw, 100vw"
+                    sizes="(min-width: 1200px) 50vw, 100vw"
                     className="object-cover"
                   />
                 </div>
-                <div className="flex flex-1 flex-col gap-5 p-4 pb-6 lg:p-6 lg:pb-8">
-                  <h3 className="type-heading-md">{pillar.title}</h3>
-                  <p className="type-body-md">{pillar.description}</p>
+                <div className="flex flex-1 flex-col gap-5 pt-6 lg:pt-8">
+                  <h2 className="type-heading-md max-w-[16ch]">{feature.title}</h2>
+                  <p className="type-body-md max-w-[40ch]">{feature.description}</p>
                   <div className="mt-auto pt-4">
-                    <ArrowLink href={pillar.href}>Learn more</ArrowLink>
+                    <ButtonLink href={feature.href} variant="outline-ink" external={feature.external}>
+                      {feature.cta}
+                    </ButtonLink>
                   </div>
                 </div>
               </article>
@@ -152,11 +118,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section bg-white">
+      <section className="section section-flush bg-white">
         <div className="page-wrap">
           <SectionHead>Our Network</SectionHead>
           <div className="grid gap-[var(--grid-gap)] lg:grid-cols-12">
-            <div className="relative flex flex-col overflow-hidden bg-sky p-6 text-ink lg:col-span-5 lg:p-10">
+            <div className="relative flex flex-col overflow-hidden bg-gold p-6 text-ink lg:col-span-5 lg:p-10">
               <h2 className="type-heading-md relative z-10">Affiliated ISocs</h2>
               <p className="type-body-md relative z-10 mt-6">
                 Over 110 Islamic Societies from universities and colleges across the UK and Ireland, united under one
@@ -164,7 +130,7 @@ export default function Home() {
               </p>
               <div className="relative z-10 mt-8 flex flex-wrap gap-4">
                 <ButtonLink href="/find-your-isoc/" variant="ink">
-                  View All ISocs
+                  Find Your ISoc
                 </ButtonLink>
                 <ButtonLink href="/isoc-affiliations/" variant="outline-ink">
                   Affiliate Your ISoc
@@ -183,22 +149,93 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section bg-ice">
+      <section className="bg-white pb-[6.25rem] md:pb-[7.5rem] lg:pb-[10rem]">
         <div className="page-wrap">
-          <SectionHead>Get Involved</SectionHead>
-          <h2 className="type-heading-xl max-w-[16ch]">There Is a Place For You Here.</h2>
-          <div className="mt-12 grid gap-8 lg:mt-20 lg:grid-cols-12 lg:gap-x-[var(--grid-gap)]">
-            <div className="lg:col-span-5 lg:col-start-8">
-              <p className="type-body-md">
-                Whether you want to affiliate your ISoc, access our services, or join the national team, we want to
-                hear from you.
+          <SectionHead>Latest</SectionHead>
+          <div className="grid gap-[var(--grid-gap)] lg:grid-cols-12">
+            <div className="relative flex flex-col overflow-hidden bg-navy p-6 text-white lg:col-span-4 lg:p-10">
+              <h2 className="type-heading-md relative z-10">News &amp; Updates</h2>
+              <p className="type-body-md relative z-10 mt-6">
+                The latest from FOSIS, perspectives on Muslim student life, advocacy, careers, and community.
               </p>
-              <div className="mt-8">
-                <ButtonLink href="/join-team-fosis/" variant="cobalt">
-                  Contact Us
+              <div className="relative z-10 mt-8">
+                <ArrowLink href="/articles/">View all articles</ArrowLink>
+              </div>
+              <div aria-hidden="true" className="burst absolute inset-x-0 bottom-0 h-1/2" />
+            </div>
+            <div className="grid gap-[var(--grid-gap)] md:grid-cols-3 lg:col-span-8">
+              {ARTICLES.slice(0, 3).map((article) => (
+                <article key={article.href} className="group relative flex flex-col">
+                  <div className="relative aspect-[3/2] overflow-hidden">
+                    {article.image && (
+                      <Image
+                        src={article.image}
+                        alt=""
+                        role="presentation"
+                        fill
+                        sizes="(min-width: 1200px) 20vw, (min-width: 680px) 30vw, 100vw"
+                        className="object-cover"
+                      />
+                    )}
+                  </div>
+                  <p className="type-label mt-4 flex gap-3 text-grey">
+                    <time dateTime={article.date}>{formatArticleDate(article.date)}</time>
+                    <span>{article.readTime}</span>
+                  </p>
+                  <h3 className="type-heading-xs mt-3">
+                    <Link href={article.href} prefetch={false} className="after:absolute after:inset-0">
+                      {article.title}
+                    </Link>
+                  </h3>
+                  <p className="type-body-sm mt-3 line-clamp-4">{article.excerpt}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <NewsletterBand />
+
+      <section className="bg-white pb-[6.25rem] md:pb-[7.5rem] lg:pb-[10rem]">
+        <div className="page-wrap">
+          <SectionHead>Projects</SectionHead>
+          <div className="grid gap-[var(--grid-gap)] lg:grid-cols-12">
+            <div className="relative flex flex-col overflow-hidden bg-gold p-6 text-ink lg:col-span-5 lg:p-10">
+              <h2 className="type-heading-md relative z-10">Explore FOSIS Projects</h2>
+              <div className="relative z-10 mt-8">
+                <ButtonLink href="/join-team-fosis/" variant="ink">
+                  Explore Our Projects
                 </ButtonLink>
               </div>
+              <div aria-hidden="true" className="burst absolute inset-x-0 bottom-0 h-1/2" />
             </div>
+            <ul className="lg:col-span-7">
+              {PROJECTS.map((project) => (
+                <li key={project.href} className="border-t border-ink last:border-b">
+                  <Link
+                    href={project.href}
+                    prefetch={false}
+                    className="type-heading-xs flex items-center justify-between gap-4 py-5 lg:py-6"
+                  >
+                    {project.label}
+                    <ArrowIcon />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <FaqSection />
+
+      <section className="section section-flush bg-white">
+        <div className="page-wrap">
+          <SectionHead>Contact</SectionHead>
+          <div className="grid gap-10 lg:grid-cols-12 lg:gap-x-[var(--grid-gap)]">
+            <h2 className="type-heading-md max-w-[14ch] lg:col-span-5">Have a question or want to work with us?</h2>
+            <ContactCard />
           </div>
         </div>
       </section>

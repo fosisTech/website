@@ -1,9 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { Encode_Sans_Condensed, Frank_Ruhl_Libre, Inter } from "next/font/google";
+import { Amiri, Encode_Sans_Condensed, Frank_Ruhl_Libre, Inter } from "next/font/google";
 import "./globals.css";
-import { DonatePill } from "@/components/DonatePill";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { SupportBand } from "@/components/SupportBand";
 import {
   isIndexable,
   SITE_DESCRIPTION,
@@ -31,9 +31,15 @@ const inter = Inter({
   weight: ["500"],
 });
 
+const amiri = Amiri({
+  variable: "--font-arabic-face",
+  subsets: ["arabic"],
+  weight: ["400", "700"],
+});
+
 export const viewport: Viewport = {
   themeColor: [
-    { color: "#0064f0" },
+    { color: "#1a4a7a" },
   ],
 };
 
@@ -88,18 +94,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-GB" className={`${encodeCondensed.variable} ${frankRuhl.variable} ${inter.variable}`}>
+    <html lang="en-GB" className={`${encodeCondensed.variable} ${frankRuhl.variable} ${inter.variable} ${amiri.variable}`}>
       <body className="antialiased">
         <a
           href="#main-content"
-          className="type-cta absolute -top-16 left-4 z-[60] bg-white px-4 py-3 text-ink transition-[top] duration-200 focus:top-4 focus:outline-2 focus:outline-offset-2 focus:outline-ink"
+          className="type-cta absolute -top-16 left-4 z-[60] bg-white px-4 py-3 text-ink transition-[top] duration-200 focus:top-4"
         >
           Skip to main content
         </a>
         <SiteHeader />
         {children}
+        <SupportBand />
         <SiteFooter />
-        <DonatePill />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}

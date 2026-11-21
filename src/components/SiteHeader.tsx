@@ -46,7 +46,7 @@ function DesktopNav({ solid }: { solid: boolean }) {
 
   return (
     <nav ref={nav} aria-label="Primary Navigation" className="hidden lg:block">
-      <ul className="flex items-center gap-5 xl:gap-8">
+      <ul className="flex items-center gap-6 xl:gap-10">
         {NAV_ITEMS.map((item) => {
           const open = openLabel === item.label;
           return (
@@ -66,7 +66,7 @@ function DesktopNav({ solid }: { solid: boolean }) {
                   if (item.href === "#") event.preventDefault();
                   setOpenLabel(item.label);
                 }}
-                className={`type-nav inline-flex items-center gap-1 whitespace-nowrap ${item.label === "Support Us" ? `px-5 py-3 transition-colors duration-300 ${solid ? "bg-cobalt text-white hover:bg-ink" : "bg-white text-ink hover:bg-cobalt hover:text-white"}` : "py-3"}`}
+                className={`type-nav inline-flex items-center gap-1 whitespace-nowrap ${item.label === "Support Us" ? `px-5 py-3 transition-colors duration-300 ${solid ? "bg-navy text-white hover:bg-ink" : "bg-white text-ink hover:bg-navy hover:text-white"}` : "py-3"}`}
               >
                 {item.label}
                 {item.children && <Chevron open={open} />}
@@ -127,7 +127,7 @@ function MobileDrawer({ open, onClose }: { open: boolean; onClose: () => void })
       aria-modal="true"
       aria-label="Site menu"
       onKeyDown={onKeyDown}
-      className={`fixed inset-0 z-50 flex flex-col overflow-y-auto bg-cobalt text-white duration-300 lg:hidden ${open ? "visible opacity-100 transition-opacity" : "invisible opacity-0 transition-[opacity,visibility]"}`}
+      className={`fixed inset-0 z-50 flex flex-col overflow-y-auto bg-navy text-white duration-300 lg:hidden ${open ? "visible opacity-100 transition-opacity" : "invisible opacity-0 transition-[opacity,visibility]"}`}
     >
       <div className="page-wrap flex h-[var(--nav-height)] shrink-0 items-center justify-between">
         <Image src="/images/fosis-logo.png" alt="FOSIS" width={512} height={464} className="h-14 w-auto" />
@@ -227,7 +227,19 @@ export function SiteHeader() {
     >
       <div className="page-wrap flex h-[var(--nav-height)] items-center justify-between gap-6">
         <Link href="/" aria-label="FOSIS home" className="shrink-0">
-          <Image src="/images/fosis-logo.png" alt="FOSIS" width={512} height={464} priority className={`h-14 w-auto transition-[filter] duration-300 lg:h-16 ${solid ? "brightness-0" : ""}`} />
+          <span
+            role="img"
+            aria-label="FOSIS"
+            className={`block aspect-[512/464] h-14 transition-colors duration-300 lg:h-16 ${solid ? "bg-navy" : "bg-white"}`}
+            style={{
+              WebkitMaskImage: "url(/images/fosis-logo.png)",
+              maskImage: "url(/images/fosis-logo.png)",
+              WebkitMaskSize: "contain",
+              maskSize: "contain",
+              WebkitMaskRepeat: "no-repeat",
+              maskRepeat: "no-repeat",
+            }}
+          />
         </Link>
         <DesktopNav solid={solid} />
         <button

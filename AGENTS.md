@@ -144,6 +144,7 @@ There is no FOSIS Resend profile yet. When this project needs transactional emai
 - Never commit secrets. Use `.env.local` for local values (see `.env.example`).
 - Preserve unrelated worktree changes.
 - Respect `~/.bunfig.toml` `minimumReleaseAge` (7 days). Do not disable the age gate for routine dependency bumps.
+- No eyebrows: do not add small kicker labels, numerals or tags above a page or section heading, and no `eyebrow` prop on any component.
 - Primary lint is Oxlint (`bun run lint`), including anti-slop rules under `tools/oxlint/anti-slop`. Use `bun run lint:eslint` when Next/ESLint rules matter.
 
 ## Commands
