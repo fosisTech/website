@@ -90,6 +90,10 @@ fosis-website/
 ## Documentation
 
 - [`AGENTS.md`](AGENTS.md): working rules for coding agents, including the GitHub / Cloudflare / Convex / Clerk / Resend profile inventory
+- [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md): contributor workflow, checks, commits, and PR template
+- [`docs/context.md`](docs/context.md): product purpose, audience, related organisations, and change constraints
+- [`docs/ENVIRONMENT.md`](docs/ENVIRONMENT.md): environment variables and indexing behavior
+- [`docs/MAINTAINERS.md`](docs/MAINTAINERS.md): maintainer-only release and deploy procedure
 - [`docs/CODEBASE_MAP.md`](docs/CODEBASE_MAP.md): modules, routes, workflows, and risks
 - [`docs/fosis-site/README.md`](docs/fosis-site/README.md): scraped reference for the rebuild (structure, copy, links, images)
 - [`docs/security-checklist.md`](docs/security-checklist.md): security gate (`security-audit` / `security-vulnerability-mitigation`)
@@ -155,7 +159,7 @@ To attach the domain, add `fosis.org.uk` as a Custom Domain on the `website` Wor
 
 ## Contributing
 
-Contributions should follow the rules in `AGENTS.md`:
+Read [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md) before you open a pull request. Contributions should also follow the rules in `AGENTS.md`:
 - Read `docs/fosis-site/` before writing copy, and do not paraphrase it
 - Add new components in `src/components/`
 - Run `bun run lint` and `bun run typecheck` before proposing a change
